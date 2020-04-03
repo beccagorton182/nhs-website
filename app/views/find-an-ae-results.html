@@ -1,0 +1,119 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Find an A&E
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+
+{% block beforeContent %}
+<div class="nhsuk-global-alert" id="nhsuk-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="nhsuk-global-alert__content">
+          <div class="nhsuk-global-alert__message">
+            <h2>Coronavirus: do not leave your home</h2>
+            <p>Everyone must stay at home to help stop the spread of <a href="https://www.nhs.uk/conditions/coronavirus-covid-19/">coronavirus</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Breadcrumb -->
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="">Services near you</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="find-an-ae">Find an A&E</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/">Back to Find an A&E </a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <h1>
+        A&Es near L21 2PJ
+      </h1>
+<hr>
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+      <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"> <span class="nhsuk-u-visually-hidden">Aintree University Hospital is &amp; </span>3.0 miles away </p>
+      <h2 class="nhsuk-u-margin-top-0"><a href="">Aintree University Hospital</a></h2>
+
+      <div class="nhsuk-inset-text nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-3">
+        <span class="nhsuk-u-visually-hidden">Important information: </span>
+        <strong class="nhsuk-tag nhsuk-tag--orange nhsuk-u-margin-bottom-2">A&E VERY BUSY</strong>
+        <p>Please use a different A&E for emergencies. This A&E may not be able to treat you right now.</p>
+      </div>
+      <p class="nhsuk-list nhsuk-u-margin-bottom-2">Aintree University Hospital, Lower Lane, Liverpool, Merseyside, L9 7AL<br>0151 525 5980</p>
+      <p><a href="">Map and directions</a></p>
+      <p><strong>Opening hours:</strong> Open 24 hours a day</p>
+      <p><strong>Service information:</strong> This service is for people aged 16 and over</p>
+
+   <hr>
+   <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"><span class="nhsuk-u-visually-hidden">Arrowe Park Hospital is</span>7.2 miles away</p>
+   <h2 class="nhsuk-u-margin-top-0"><a href="/">Arrowe Park Hospital</a></h2>
+   <p class="nhsuk-list nhsuk-u-margin-bottom-2">Arrowe Park Road, Upton, Wirral, Merseyside, CH49 5PE <br> 0151 678 5111</p>
+      <p><a href="">Map and directions</a></p>
+      <p><strong>Opening hours:</strong> Open 24 hours a day</p>
+      <p><strong>Service information:</strong> This service is for people of all ages</p>
+
+      <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"> <span class="nhsuk-u-visually-hidden">Whiston Hospital is &amp; </span>9.4 miles away </p>
+      <h2 class="nhsuk-u-margin-top-0"><a href="/">Whiston Hospital</a></h2>
+
+      <div class="nhsuk-inset-text nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-3">
+        <span class="nhsuk-u-visually-hidden">Important information: </span>
+        <strong class="nhsuk-tag nhsuk-tag--yellow nhsuk-u-margin-bottom-2">A&E BUSY</strong>
+        <p>Please use a different A&E for emergencies. This A&E may not be able to treat you right now.</p>
+      </div>
+      <p class="nhsuk-list nhsuk-u-margin-bottom-2">Warrington Road, Prescot, Merseyside, L35 5DR<br>0151 426 1600</p>
+      <p><a href="">Map and directions</a></p>
+      <p><strong>Opening hours:</strong> Open 24 hours a day</p>
+      <p><strong>Service information:</strong> This service is for people of all ages</p>
+
+      <hr>
+   <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"><span class="nhsuk-u-visually-hidden">Southport and Formby General Hospital is</span>11.5 miles away</p>
+   <h2 class="nhsuk-u-margin-top-0"><a href="/">Southport and Formby General Hospital</a></h2>
+   <p class="nhsuk-list nhsuk-u-margin-bottom-2">Town Lane, Southport, Merseyside, PR8 6PN <br> 0151 678 5111</p>
+      <p><a href="">Map and directions</a></p>
+      <p><strong>Opening hours:</strong> Open 24 hours a day</p>
+      <p><strong>Service information:</strong> This service is for people of all ages</p>
+      <hr>
+
+      <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"> <span class="nhsuk-u-visually-hidden">Royal Albert Edward Infirmary is &amp; </span>16.3 miles away </p>
+      <h2 class="nhsuk-u-margin-top-0"><a href="/">Royal Albert Edward Infirmary</a></h2>
+      <div class="nhsuk-inset-text nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-3">
+        <span class="nhsuk-u-visually-hidden">Important information: </span>
+        <strong class="nhsuk-tag nhsuk-tag--red nhsuk-u-margin-bottom-2">A&E UNAVAILABLE RIGHT NOW</strong>
+        <p>Please use a different A&E for emergencies. This A&E may not be able to treat you right now.</p>
+      </div>
+      <p class="nhsuk-list nhsuk-u-margin-bottom-2">Wigan Lane, Wigan, Lancashire, WN1 2NN<br>01942 244000</p>
+      <p><a href="">Map and directions</a></p>
+      <p><strong>Opening hours:</strong> Currently closed</p>
+      <p><strong>Service information:</strong> This service is for people of all ages</p>
+
+      <!-- End of content -->
+
+    </div>  
+
+  </div>
+{% endblock %}

@@ -20,15 +20,35 @@
 <!-- Header goes inside the header block -->
 <!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
 {% block header %}
-  {{ header({
-    "service": {
-        "name": "Prototype kit",
-        "href": "/"
+{% from 'header/macro.njk' import header %}
+
+{{ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url"  : "https://www.nhs.uk/conditions",
+        "label" : "Health A-Z"
       },
-      "showNav": "false",
-      "showSearch": "false"
-    })
-  }}
+      {
+        'url' : 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+      },
+      {
+        'url'  : 'https://www.nhs.uk/conditions/social-care-and-support/',
+        'label' : 'Care and support'
+      },
+      {
+        'url'  : 'https://www.nhs.uk/news/',
+        'label' : 'Health news'
+      },
+      {
+        'url' : 'https://www.nhs.uk/service-search',
+        'label' : 'Services near you'
+      }
+    ]
+  })
+}}
 {% endblock %}
 
 <!-- Footer goes inside the footer block -->

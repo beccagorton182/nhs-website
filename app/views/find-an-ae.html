@@ -1,0 +1,87 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Find an A&E
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+
+{% block beforeContent %}
+<div class="nhsuk-global-alert" id="nhsuk-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="nhsuk-global-alert__content">
+          <div class="nhsuk-global-alert__message">
+            <h2>Coronavirus: do not leave your home</h2>
+            <p>Everyone must stay at home to help stop the spread of <a href="https://www.nhs.uk/conditions/coronavirus-covid-19/">coronavirus</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Breadcrumb -->
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="find-a-service">Services near you</a></li>
+        
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/">Back to services near you </a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <h1>
+        Find an A&E
+      </h1>
+
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+      <div class="nhsuk-warning-callout">
+        <h3 class="nhsuk-warning-callout__label">Coronavirus: update on getting medical help</h3>
+        <p>To protect yourself and others from coronavirus (COVID-19), try to avoid face-to-face medical help if possible.</p>
+        <ul>
+        <li><strong>For help from a GP:</strong> visit their website, contact them online or phone the surgery.</li>
+        <li><strong>For urgent medical help:</strong> visit <a href="">111.nhs.uk</a> - call 111 if you need help for a child under 5 or you cannot get help online.</li>
+        <li><strong>For life threatening emergencies:</strong> call 999 for an ambulance.</li>
+
+        </ul>
+        <p><a href="">Find out how to get medical help from home</a></p>
+
+  
+      </div>
+
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="Location">
+            Enter a town, city or postcode in England
+        </label>
+        <input class="nhsuk-input nhsuk-input--width-20" type="text" id="Location" name="Location" value="">
+    </div>
+    <a class="nhsuk-button nhsuk-u-margin-bottom-4" href="find-an-ae-results">Search</a> <br>
+    <button class="nhsuk-button nhsuk-button--secondary nhsuk-u-margin-bottom-4" type="submit">Use my location</button>
+
+      <!-- End of content -->
+
+    </div>  
+
+  </div>
+{% endblock %}
