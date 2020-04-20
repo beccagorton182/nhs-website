@@ -1,0 +1,102 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Find an A&E
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+
+{% block beforeContent %}
+<div class="nhsuk-global-alert" id="nhsuk-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="nhsuk-global-alert__content">
+          <div class="nhsuk-global-alert__message">
+            <h2>Coronavirus: stay at home</h2>
+            <p>Only leave your home if it's essential. This will help stop the spread of <a href="https://www.nhs.uk/conditions/coronavirus-covid-19/">coronavirus</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Breadcrumb -->
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Home</a></li>
+        </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/">Back to Home </a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-0">
+
+      <!-- Change the page title here -->
+      <h1>
+        Find services near you
+      </h1>
+
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+     
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-one-third">
+<ul class="nhsuk-list">
+  <li><a href="#">GP</a></li>
+<li><a href="#">Dentist</a></li>
+<li><a href="#">Pharmacy</a></li>
+<li><a href="#">Optician</a></li>
+<li><a href="#">Hospital</a></li>
+</ul>
+</div>
+
+
+
+  <div class="nhsuk-grid-column-one-third">
+    <ul class="nhsuk-list">
+      <li><a href="#">Urgent care services</a></li>
+      <li><a href="#">Sexual health services</a></li>
+      <li><a href="#">Pregnancy </a></li>
+      <li><a href="find-mh">Mental health services</a></li>
+      <li><a href="#">Find other NHS services</a></li>
+      </ul>
+
+  </div>
+</div>
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    <h2 class="nhsuk-heading-s">If you need help now and you're not sure what to do</h2>
+    <ul class="nhsuk-list">
+      <li>Go to <a href="#">111.nhs.uk</a> or call 111</li>
+    </ul>
+    <h2 class="nhsuk-heading-s">If you think it's an emergency</h2>
+    <ul class="nhsuk-list">
+      <li><a href="#">Find your nearest A&E</a></li>
+      <li>Call 999</li>
+    </ul>
+  
+      <!-- End of content -->
+
+    </div>  
+
+  </div>
+{% endblock %}
