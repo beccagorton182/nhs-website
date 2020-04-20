@@ -28,16 +28,7 @@
     </div>
   </div>
 </div>
-  <!-- Breadcrumb -->
-  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
-    <div class="nhsuk-width-container">
-      <ol class="nhsuk-breadcrumb__list">
-        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">Home</a></li>
-        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/crisis-support-finder/v2/find-a-service">Services near you</a></li>
-        </ol>
-      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/crisis-support-finder/v2/find-a-service">Back to Services near you</a></p>
-    </div>
-  </nav>
+
 {% endblock %}
 
 <!-- Your page content goes inside the content block -->
@@ -55,14 +46,14 @@
           Go back</a>
       </div>
       <!-- Change the page title here -->
-      <h1>
-        Finding your local helpline
+      <h1 class="nhsuk-u-margin-bottom-4">
+        Finding a local helpline
       </h1>
    
       <!-- Add your content here -->
       <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
   
-      <p>We need to know where you are so we can find your local helpline.</p>
+      <p class="nhsuk-hint">We need to know where you are so we can find your local helpline.</p>
       <form action ="/crisis-support-finder/v2/finder/postcode-search-branch" method="post"> 
       <div class="nhsuk-form-group">
         <label class="nhsuk-label" for="input-width-10">
@@ -71,7 +62,7 @@
         <input class="nhsuk-input nhsuk-input--width-10" id="input-width-10" name="postcode" type="text">
       </div>
 
-   <button class="nhsuk-button nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-3" type="submit">Search</button> <br>
+   <button class="nhsuk-button nhsuk-u-margin-bottom-4" type="submit">Search</button> <br>
    <button class="nhsuk-button nhsuk-button--secondary" type="submit">Use your location</button>
 </form>
   
