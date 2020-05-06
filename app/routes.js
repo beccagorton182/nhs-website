@@ -65,7 +65,7 @@ if (age < 18) {
     res.redirect('/crisis-support-finder/v4/finder/results-east')
   }
   else if (postcode == "EH" || postcode == "CF") {
-    res.redirect('/crisis-support-finder/v4/finder/no-result')
+    res.redirect('/crisis-support-finder/v4/finder/outside-england')
   }
   else {
     // Send user to ineligible page if they use none of those postcodes
