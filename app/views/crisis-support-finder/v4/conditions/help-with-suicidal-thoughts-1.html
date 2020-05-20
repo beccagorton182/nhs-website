@@ -1,0 +1,110 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  NHS.UK prototypes - Becca
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <h1>
+      Help for suicidal thoughts
+      
+      </h1>
+
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+
+    
+
+
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <p><b>If you're feeling like you want to die, it's important to tell someone.</b></p>
+       
+      <p>Help and support is available right now if you need it. You don't have to struggle with difficult feelings alone.</p>
+      <p>Read about <a href="/crisis-support-finder/v4/urgent-mh-care">where to get urgent help for mental health</a>.</p>
+
+      <h2>Phone a helpline</h2>
+      <p>These free helplines are there to help when you're feeling down or desperate.</p>
+      <p>Unless it says otherwise, they're open 24 hours a day, every day.</p>
+
+          <div class="nhsuk-inset-text">
+            <span class="nhsuk-u-visually-hidden">Information: </span>
+            <p><a href="https://www.samaritans.org/">Samaritans</a> – for everyone<br> <b>Call 116 123</b><br> <b>Email</b> <a href="mailto:jo@samaritans.org">jo@samaritans.org</a></p>
+          </div>
+
+          <div class="nhsuk-inset-text">
+            <span class="nhsuk-u-visually-hidden">Information: </span>
+            <p><a href="https://www.thecalmzone.net/">Campaign Against Living Miserably (CALM)</a> – for men<br> <b>Call 0800 58 58 58</b> – 5pm to midnight every day<br> <b>Visit</b> the <a href="https://www.thecalmzone.net/help/webchat/">webchat page</a></p>
+          </div>
+
+          <div class="nhsuk-inset-text">
+            <span class="nhsuk-u-visually-hidden">Information: </span>
+            <p><a href="https://www.papyrus-uk.org/help-advice/about-hopelineuk">Papyrus</a> – for people under 35<br> <b>Call 0800 068 41 41</b> – Monday to Friday 10am to 10pm, weekends 2pm to 10pm, bank holidays 2pm to 5pm<br> <b>Text 07860 039967</b><br> <b>Email</b> <a href="mailto:pat@papyrus-uk.org">pat@papyrus-uk.org</a></p>
+          </div>
+
+          <div class="nhsuk-inset-text">
+            <span class="nhsuk-u-visually-hidden">Information: </span>
+            <p><a href="https://www.childline.org.uk/">Childline</a> – for children and young people under 19<br> <b>Call 0800 1111</b> – the number won't show up on your phone bill</p>
+          </div>
+
+
+          <h3>Talk to someone you trust</h3>
+
+          <p>Let family or friends know what's going on for you. They may be able to offer support and help keep you safe.</p>
+          <p>There's no right or wrong way to talk about suicidal feelings – starting the conversation is what's important.</p>
+
+          <h3>Who else can you talk to</h3>
+
+          <p>If you find it difficult to talk to someone you know, you could:</p>
+          <ul><li><b>call your GP</b> – ask for an emergency appointment</li>
+            <li><b>call 111</b> out of hours – they will help you find the support and help you need</li>
+            <li><b>contact your mental health crisis team</b> – if you have one</li>
+          </ul>
+
+          <div class="nhsuk-warning-callout">
+            <h3 class="nhsuk-warning-callout__label">Important</h3>
+            <h2>Is your life in danger?</h2><p>If you have seriously harmed yourself – for example, by taking a drug overdose – call 999 for an ambulance or go straight to A&amp;E.</p><p>Or ask someone else to call 999 or take you to A&amp;E.</p>
+          </div>
+
+          <h3>Tips for coping right now</h3>
+          <ul><li>try not to think about the future – just focus on getting through today</li>
+            <li>stay away from drugs and alcohol</li>
+            <li>get yourself to a safe place, like a friend's house</li>
+            <li>be around other people</li>
+            <li>do something you usually enjoy, such as spending time with a pet</li></ul>
+            <p>See <a href="https://www.rethink.org/diagnosis-treatment/symptoms/suicidal-thoughts">more tips from Rethink</a>.</p>
+
+            <h3>Worried about someone else?</h3>
+            <p>If you're worried about someone, try to get them to talk to you. Ask open-ended questions like: "How do you feel about...?"</p>
+            <p>Don't worry about having the answers. Just listening to what someone has to say and taking it seriously can be more helpful.</p>
+            <p>See Samaritans' tips on <a href="https://www.samaritans.org/difficultconversations">how to start a difficult conversation</a>.</p>
+            <p>Rethink also has advice on <a href="https://www.rethink.org/carers-family-friends/what-you-need-to-know/suicidal-thoughts-how-to-support-someone">how to support someone who is having suicidal thoughts</a>.</p>
+
+  </div>
+  </div>
+{% endblock %}

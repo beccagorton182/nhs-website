@@ -45,17 +45,25 @@
 
     <div class="nhsuk-grid-column-three-quarters">
 
-   <!-- Change the page title here -->
-   <h1>
-    Local NHS urgent mental health helpline for {{ data['postcode'] }}:</h1>
+      <!-- Change the page title here -->
+      <h1 class="nhsuk-u-margin-bottom-4">Find a local NHS urgent mental health helpline</h1>
+      <h2 class="nhsuk-heading-l">
+       2 helplines available for {{ data['postcode'] }}:</h2>
+      
+   <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+      <div class="nhsuk-panel-with-label">
+        <div class="nhsuk-panel-with-label__label">Nearest to you</div>
+       <h3 class="nhsuk-heading-m nhsuk-u-margin-bottom-0">Merseycare NHS Trust</h3><br>
+       <h4 class="nhsuk-heading-s nhsuk-u-margin-top-0"><a href="#">0344 678 991</a></h4>
+      </div>
 
-<!-- Add your content here -->
-  <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+      <div class="nhsuk-panel">
+        <h3 class="nhsuk-heading-m nhsuk-u-margin-bottom-0">Lancashire NHS Foundation Trust</h3><br>
+        <h4 class="nhsuk-heading-s nhsuk-u-margin-top-0"><a href="#">0800 112 223</a></h4>
+       </div>
 
-   <h2 class="nhsuk-heading-l nhsuk-u-margin-bottom-0">NHS Community Healthcare Trust</h2><br>
-   <h3><a href="#">0344 123877</a></h3>
        <p>Help is available 24 hours a day, 7 days a week. You can talk to a mental health professional who can provide advice and support.</p>
-       <p>If you're a parent or guardian calling for a child, you can speak to the helpline for them.</p>
        <details class="nhsuk-details">
         <summary class="nhsuk-details__summary">
           <span class="nhsuk-details__summary-text">
@@ -74,9 +82,9 @@
        
        <hr>
 
-       <h4 class="nhsuk-heading-m">If you prefer not to call, read more about the support available in your local area:</h4>
+       <h4 class="nhsuk-heading-s">If you prefer not to call, read more about the support available in your local area:</h4>
        <ul class="nhsuk-list">
-        <li><a href="#">NHS Foundation Mental Health Trust website</a></li>
+        <li><a href="#">Merseycare NHS Trust website</a></li>
   
        
 
