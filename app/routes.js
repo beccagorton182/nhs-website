@@ -79,6 +79,45 @@ if (age > 18) {
 
 })
 
+// Branching example -- version 5
+router.post('/crisis-support-finder/v5/finder/postcode-search-branch', function (req, res) {
+
+  // Create postcode as a variable and ask the prototype to remember it, and look at the first two letters of the postcode
+  //Also store the age from the page and pass it through
+  var postcode = req.session.data['postcode'].substring(0,2).toUpperCase();
+  var age = req.session.data['age'];
+
+// Check whether the postcode matches any of the below
+// Send user to next page based on postcode
+if (age > 18) {
+  //Check postcodes for under 18's
+  if (postcode == "LS") {
+    res.redirect('/crisis-support-finder/v5/finder/results-west')
+  } else if (postcode == "BN") {
+    res.redirect('/crisis-support-finder/v5/finder/results-south')
+  } else if (postcode == "DH") {
+    res.redirect('/crisis-support-finder/v5/finder/results-north')
+  } else if (postcode == "SW") {
+    res.redirect('/crisis-support-finder/v5/finder/results-london')
+  }
+  else if (postcode == "PR") {
+    res.redirect('/crisis-support-finder/v5/finder/results-two')
+  }
+  else if (postcode == "EH" || postcode == "CF") {
+    res.redirect('/crisis-support-finder/v5/finder/outside-england')
+  }
+  else {
+    // Send user to generic adult page
+    res.redirect('/crisis-support-finder/v5/finder/results-general')
+  }
+} else {
+  //Send to generic young person's page
+  res.redirect('/crisis-support-finder/v5/finder/results-young')
+}
+
+})
+
+
 
 
 

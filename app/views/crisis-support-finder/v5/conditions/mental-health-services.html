@@ -1,0 +1,107 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  NHS.UK prototypes - Becca
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <h1>
+      Mental health services
+      
+      </h1>
+<p class="nhsuk-lede-text">Information about NHS mental health services</p>
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+
+
+
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="mental-health-helplines">
+            <div class="nhsuk-promo__content">
+              <h2 class="nhsuk-promo__heading">Find a psychological therapies service</h2>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+
+  </div>
+  <div class="nhsuk-grid-row nhsuk-u-margin-top-6">
+    <div class="nhsuk-grid-column-three-quarters">
+      <a class="nhsuk-heading-m" href="">
+        How to access mental health services
+      </a>
+      <p class="nhsuk-hint nhsuk-u-margin-bottom-4">Information on accessing mental health services and how to choose them</p>
+
+      <a class="nhsuk-heading-m" href="/crisis-support-finder/v4/urgent-mh-care">
+        Where to get urgent help for mental health
+      </a>
+      <p class="nhsuk-hint nhsuk-u-margin-bottom-4">Read more about services to help you deal with a mental health crisis or emergency</p>
+
+      <a class="nhsuk-heading-m" href="#">
+       Mental health assessments
+      </a>
+      <p class="nhsuk-hint nhsuk-u-margin-bottom-4">Find out how a mental health assessment works and how to get a second opinion
+
+      </p>
+
+      <a class="nhsuk-heading-m" href="#">
+        Child and adolescent mental health services (CAMHS)
+       </a>
+       <p class="nhsuk-hint nhsuk-u-margin-bottom-4">Information about child and adolescent mental health services
+
+
+       </p>
+       <a class="nhsuk-heading-m" href="#">
+        CAMHS information for children and young people
+       </a>
+       <p class="nhsuk-hint nhsuk-u-margin-bottom-4">Information about child and adolescent mental health services
+
+
+       </p>
+
+       <a class="nhsuk-heading-m" href="#">
+        Child and adolescent mental health services information for parents and carers
+       </a> 
+       <p class="nhsuk-hint nhsuk-u-margin-bottom-4">If you're worried about a child or need advice and support for coping with anything affecting your child's emotional or mental health
+
+
+       </p>
+
+       <a class="nhsuk-heading-m" href="#">
+        Mental Health Act: your rights (easy read)
+       </a>
+       <p class="nhsuk-hint nhsuk-u-margin-bottom-4">An easy read guide to your rights, including easy read leaflets you can download 
+
+       </p>
+      
+    </div>
+
+  </div>
+{% endblock %}

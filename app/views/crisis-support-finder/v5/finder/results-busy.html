@@ -1,0 +1,102 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Find an NHS mental health crisis support service
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+
+{% block beforeContent %}
+<div class="nhsuk-global-alert" id="nhsuk-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="nhsuk-global-alert__content">
+          <div class="nhsuk-global-alert__message">
+            <h2>Coronavirus: stay at home</h2>
+            <p>Only leave your home if it's essential. This will help stop the spread of <a href="https://www.nhs.uk/conditions/coronavirus-covid-19/">coronavirus</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-back-link nhsuk-u-margin-top-0">
+  <a class="nhsuk-back-link__link" href="postcode-search">
+    <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+    </svg>
+    Go back</a>
+</div>
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-three-quarters">
+
+      <!-- Change the page title here -->
+      <h1>
+       Local NHS urgent mental health helpline for {{ data['postcode'] }}:</h1>
+
+   <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+
+       <h2 class="nhsuk-heading-l nhsuk-u-margin-bottom-0">NHS Foundation Trust</h2><br>
+       <h3 class="nhsuk-u-margin-top-0"><a href="#">0344 678 991</a></h3>
+       <p>Help is available 24 hours a day, 7 days a week. You can talk to a mental health professional who can provide advice and support.</p>
+       <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Will I be charged for this call?
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Calls to most NHS urgent mental health helplines are free.</p>
+          <p>Some calls may be charged at the moment. The NHS is working to make all urgent mental health helplines free to call.</p>
+          
+          <p>Calls from a BT landline are the cost of a local call. Calls from other landlines and mobile providers will vary and may cost more.</p>
+      
+        </div>
+      </details>
+
+      <div class="nhsuk-panel-with-label">
+        <h3 class="nhsuk-panel-with-label__label">This helpline may be busy</h3>
+        <p>There may be a longer wait than usual for this helpline.</p>
+        <p>If you need help now, you can also:</p>
+      <div class="nhsuk-list">
+      <ul>
+        <li>call Samaritans free on <a href="#">116 123</a> to talk to someone now</li>
+        <li>use the <a href="#">NHS 111 online service</a> or call <a href="#">111</a> if you're not sure what to do</li>
+        <li>call <a href="#">999</a> if someone's life is at risk</li>
+      </ul>
+      </div>
+      </div>
+       
+       
+       <hr>
+
+       <h4 class="nhsuk-heading-s">If you prefer not to call, read more about the support available in your local area:</h4>
+       <ul class="nhsuk-list">
+        <li><a href="#">NHS Foundation Mental Health Trust website</a></li>
+  
+       
+
+  
+
+      <!-- End of content -->
+
+    </div>  
+
+  </div>
+{% endblock %}

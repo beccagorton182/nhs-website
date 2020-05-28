@@ -1,0 +1,79 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Find an NHS mental health crisis support service
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+
+{% block beforeContent %}
+<div class="nhsuk-global-alert" id="nhsuk-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="nhsuk-global-alert__content">
+          <div class="nhsuk-global-alert__message">
+            <h2>Coronavirus: stay at home</h2>
+            <p>Only leave your home if it's essential. This will help stop the spread of <a href="https://www.nhs.uk/conditions/coronavirus-covid-19/">coronavirus</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Breadcrumb -->
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/crisis-support-finder/v3/find-a-service">Services near you</a></li>
+        </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/crisis-support-finder/v3/find-a-service">Back to Services near you</a></p>
+    </div>
+  </nav>
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-three-quarters">
+
+      <!-- Change the page title here -->
+      <h1>
+       Find a local NHS urgent mental health helpline
+      </h1>
+
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+      <p>NHS urgent mental health helplines are for people of all ages</p>
+      <p>You can call for:</p>
+
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>24-hour advice and support - for you, your child, your parent or someone you care for</li>
+        <li>help to speak to a mental health professional</li>
+        <li>an assessment to help decide on the best course of care</li>
+      </ul>
+      <div class="nhsuk-inset-text">
+        <span class="nhsuk-u-visually-hidden">Information: </span>
+        <p>You may need urgent help for many reasons. Some people call it a crisis, an emergency or a breakdown.</p>
+        <p>The important thing to know is you will not be wasting anyone's time.</p>
+      </div>
+<a class="nhsuk-button nhsuk-u-margin-top-4" href="age">
+  Start now
+</a>
+      <!-- End of content -->
+
+    </div>  
+
+  </div>
+{% endblock %}
