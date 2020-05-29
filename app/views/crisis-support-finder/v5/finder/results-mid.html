@@ -28,6 +28,7 @@
     </div>
   </div>
 </div>
+  <!-- Breadcrumb -->
  
 {% endblock %}
 
@@ -41,27 +42,29 @@
     </svg>
     Go back</a>
 </div>
-  <div class="nhsuk-grid-row">
+<div class="nhsuk-grid-row">
 
-    <div class="nhsuk-grid-column-three-quarters">
+  <div class="nhsuk-grid-column-three-quarters nhsuk-u-margin-bottom-0">
 
-      <!-- Change the page title here -->
-      <h1 class="nhsuk-u-margin-bottom-4">Find a local NHS urgent mental health helpline</h1>
-      <h2 class="nhsuk-heading-l">
-       2 helplines available for {{ data['postcode'] }}:</h2>
-      
-   <!-- Add your content here -->
-      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
-      <div class="nhsuk-panel-with-label">
-        <div class="nhsuk-panel-with-label__label">Nearest to you</div>
-       <h3 class="nhsuk-heading-m nhsuk-u-margin-bottom-0">Merseycare NHS Trust</h3><br>
-       <h4 class="nhsuk-heading-s nhsuk-u-margin-top-0"><a href="#">0344 678 991</a></h4>
-      </div>
+    <!-- Change the page title here -->
+    <h1 class="nhsuk-heading-l">
+     Local NHS urgent mental health helpline for {{ data['postcode'] }}:</h1>
 
-      <div class="nhsuk-panel">
-        <h3 class="nhsuk-heading-m nhsuk-u-margin-bottom-0">Lancashire NHS Foundation Trust</h3><br>
-        <h4 class="nhsuk-heading-s nhsuk-u-margin-top-0"><a href="#">0800 112 223</a></h4>
-       </div>
+    </div>
+  </div>
+ <!-- Add your content here -->
+    <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+      <div class="nhsuk-panel nhsuk-u-margin-top-2">
+     <h2 class="nhsuk-heading-m nhsuk-u-margin-bottom-2">Leicestershire Partnership NHS Trust</h2>
+     <h3 class="nhsuk-heading-s"><a href="">0116 295 3060</a></h3>
+    </div>
+  </div>
+</div>
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-three-quarters">
 
        <p>Help is available 24 hours a day, 7 days a week. You can talk to a mental health professional who can provide advice and support.</p>
        <details class="nhsuk-details">
@@ -78,14 +81,13 @@
       
         </div>
       </details>
-       
-       
        <hr>
+       
 
-       <h4 class="nhsuk-heading-s">If you prefer not to call, read more about the support available in your local area:</h4>
+       <h5 class="nhsuk-heading-s">If you prefer not to call, read more about the support available in your area:</h4>
        <ul class="nhsuk-list">
-        <li><a href="#">Merseycare NHS Trust website</a></li>
-  
+      <li><a href="#">South West London and St George's Mental Health NHS Trust website</a></li>
+    
        
 
   

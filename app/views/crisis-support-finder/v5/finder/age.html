@@ -46,16 +46,16 @@
           Go back</a>
       </div>
       <!-- Change the page title here -->
-      <h1 class="nhsuk-u-margin-bottom-4">
-        Tell us your age
+      <h1 class="nhsuk-fieldset__legend--l nhsuk-u-margin-bottom-4">
+        Please tell us your age (or the age of the person you're calling for)
       </h1>
    
       <!-- Add your content here -->
       <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
   
-      <p class="nhsuk-hint">We need to know your age (or the age of the person you're calling for).</p> 
+      <p class="nhsuk-hint">We need to know this as some helplines are just for children and young people.</p> 
 
-      <form action ="/crisis-support-finder/v4/finder/postcode-search" method="post"> 
+      <form action ="/crisis-support-finder/v5/finder/postcode-search" method="post"> 
       <div class="nhsuk-form-group">
         <label class="nhsuk-label" for="input-width-2">
           Age in years
@@ -63,18 +63,7 @@
         <input class="nhsuk-input nhsuk-input--width-2" id="input-width-2" name="age" type="text">
       </div>
 
-      <details class="nhsuk-details">
-        <summary class="nhsuk-details__summary">
-          <span class="nhsuk-details__summary-text">
-            Why we are asking this question
-          </span>
-        </summary>
-        <div class="nhsuk-details__text">
-          <p>This is so we can find the right helpline. Some helplines are just for children and young people.</p>
-          
       
-        </div>
-      </details>
    <button class="nhsuk-button nhsuk-u-margin-bottom-4" type="submit">Continue</button> <br>
    
 </form>

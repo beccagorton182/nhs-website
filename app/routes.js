@@ -86,24 +86,45 @@ router.post('/crisis-support-finder/v5/finder/postcode-search-branch', function 
   //Also store the age from the page and pass it through
   var postcode = req.session.data['postcode'].substring(0,2).toUpperCase();
   var age = req.session.data['age'];
+  //store larger numbers of postcodes in the prototype
+  //created arrays to have area clusters
+  var york = ["LS", "YO", "HG", "WF"];
+  var lanc = ["PR", "WN", "BB", "LA", "FY"];
+  var south = ["OX", "HP", "RG", "GU"];
+  var london = ["SW", "NW", "HA", "WD", "WC", "EC", "MK"];
+  var mid = ["LE", "CV", "PE"];
+  var north = ["NE", "CA", "SR", "DH", "DL"];
+  var east = ["CM", "SS", "RM", "IG"];
+  var outside = ["EH", "CF"];
 
-// Check whether the postcode matches any of the below
-// Send user to next page based on postcode
+// Check the age 
 if (age > 18) {
-  //Check postcodes for under 18's
-  if (postcode == "LS") {
-    res.redirect('/crisis-support-finder/v5/finder/results-west')
-  } else if (postcode == "BN") {
+  //Check postcodes if you're over 18
+
+// Check whether the postcode matches any of the arrays
+// Send user to the page that matches the postcode
+  if (york.indexOf(postcode) >= 0) {
+    res.redirect('/crisis-support-finder/v5/finder/results-york')
+  } 
+  else if (south.indexOf(postcode) >= 0) {
     res.redirect('/crisis-support-finder/v5/finder/results-south')
-  } else if (postcode == "DH") {
-    res.redirect('/crisis-support-finder/v5/finder/results-north')
-  } else if (postcode == "SW") {
+  } 
+  else if (lanc.indexOf(postcode) >= 0) {
+    res.redirect('/crisis-support-finder/v5/finder/results-lanc')
+  } 
+  else if (london.indexOf(postcode) >=0) {
     res.redirect('/crisis-support-finder/v5/finder/results-london')
   }
-  else if (postcode == "PR") {
-    res.redirect('/crisis-support-finder/v5/finder/results-two')
+  else if (mid.indexOf(postcode) >=0) {
+    res.redirect('/crisis-support-finder/v5/finder/results-mid')
   }
-  else if (postcode == "EH" || postcode == "CF") {
+  else if (north.indexOf(postcode) >=0) {
+    res.redirect('/crisis-support-finder/v5/finder/results-north')
+  }
+  else if (east.indexOf(postcode) >=0) {
+    res.redirect('/crisis-support-finder/v5/finder/results-east')
+  }
+  else if (outside.indexOf(postcode) >=0) {
     res.redirect('/crisis-support-finder/v5/finder/outside-england')
   }
   else {
