@@ -152,3 +152,1062 @@
     background-color: tint($color_nhsuk-yellow, 50%);
     color: shade($color_nhsuk-yellow, 70%);
   }
+
+  // New IA Components
+
+  .nhsuk-homepage .nhsuk-list-links--two-columns {
+    column-count: 2;
+    column-gap: 32px;
+  }
+
+  .nhsuk-list-signage {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .nhsuk-list-signage li {
+    display: inline-block;
+    margin: 2px 0px;
+    width: 100%;
+  }
+
+  .nhsuk-list-signage li a {
+    background: #005EB8;
+    color: #FFFFFF;
+    display: block;
+    padding: 12px 24px;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  .nhsuk-list-signage li a .nhsuk-icon {
+    fill: #FFFFFF;
+    height: 24px;
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    width: 24px;
+  }
+
+
+  // Signage link 2 columns
+  @include mq($from: desktop) {
+    .nhsuk-list-links--two-columns, .nhsuk-list-signage--two-columns {
+      column-count: 2;
+      column-gap: 16px;
+    }
+  }
+
+
+
+////////////////////////////////////////////////
+// New Nav
+////////////////////////////////////////////////
+.ia-new-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include mq($until: desktop) {
+    flex-wrap: wrap;
+  }
+
+  @include mq($from: desktop) {
+    flex-direction: row;
+    align-items: stretch;
+
+    .ia-new-nav__item:nth-child(3) {
+      border-left: 1px solid rgba(255, 255, 255, 0.2);
+      border-right: none;
+      order: 5;
+    }
+
+  }
+
+}
+
+.ia-new-nav__item {
+
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(white, .2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+
+  @include mq($until: desktop) {
+    width: 33.33%;
+  }
+
+  @include mq($from: desktop) {
+    flex: 1;
+  }
+
+  &:nth-of-type(3n+3) {
+    @include mq($until: desktop) {
+      border-right: none;
+    }
+  }
+
+  &:last-child {
+    border-right: none;
+  }
+
+}
+
+.ia-new-nav__link,
+.ia-new-nav__link:visited  {
+  color: white;
+  display: block;
+  line-height: 1.3;
+  padding: 9px 5px 9px 15px;
+  text-decoration: none;
+  height: 100%;
+}
+
+.ia-new-nav__link--break {
+  @include mq($until: desktop) {
+    display: block;
+  }
+}
+
+.ia-new-nav__link:focus {
+  background-color: transparent;
+  box-shadow: none;
+  color: white;
+  outline: none;
+}
+
+.ia-new-nav__link:focus:visited {
+  color: #fff;
+}
+
+.ia-new-nav__link:hover {
+  color: white;
+  text-decoration: underline;
+  background-color: #004b93;
+}
+
+////////////////////////////////////////////////
+// Search
+////////////////////////////////////////////////
+
+.nhsuk-header__search-form {
+  background-color: transparent;
+  padding: 0;
+  width: 100%;
+}
+
+.nhsuk-header__content {
+  float: right;
+  width: 60%;
+}
+
+.nhsuk-header__search {
+  float: none;
+}
+
+.autocomplete__input {
+  border: 1px solid #fff;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 0;
+  font-size: 16px;
+  height: 36px;
+  padding: 0 12px;
+}
+
+.nhsuk-search__submit {
+  background-color: #f0f4f5;
+  border: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 4px;
+  display: block;
+  float: right;
+  font-size: inherit;
+  height: 36px;
+  line-height: inherit;
+  outline: none;
+  padding-left: 9px;
+  padding-top: 5px;
+  width: 44px;
+}
+
+.nhsuk-search__submit .nhsuk-icon__search {
+  fill: #005eb8;
+  height: 27px;
+  width: 27px;
+}
+
+.new-search-results {
+  list-style-type: disc;
+  padding-left: 0;
+  margin: 0;
+  // text-transform: capitalize;
+}
+
+.new-search-results-wrapper {
+  position: absolute;
+  z-index: 999;
+  top: 54px;
+  // height: 204px;
+  // overflow: hidden;
+  width: 300px;
+  background-color: #fff;
+  z-index: 99;
+  right: 0;
+  @include mq($until: desktop) {
+    top: 47px;
+    right: 10px;
+  }
+
+
+
+}
+
+.new-search {
+  background-color: transparent;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  min-width: 135px;
+  max-width: 275px;
+  float: right;
+}
+
+
+.new-search__input {
+  border-radius: 0;
+  -webkit-appearance: none;
+  border: 1px solid #fff;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 0;
+  font-size: 16px;
+  height: 36px;
+  padding: 0 12px;
+  width: 100%;
+  margin: 0;
+  outline: none;
+  flex-grow: 2;
+  min-width: 135px;
+}
+
+.new-search__button {
+  background-color: #f0f4f5;
+  border: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 4px;
+  display: block;
+  float: right;
+  font-size: inherit;
+  height: 36px;
+  line-height: inherit;
+  outline: none;
+  padding-left: 9px;
+  padding-top: 5px;
+  width: 44px;
+ }
+
+
+
+
+ .nhsuk-header__logo .nhsuk-logo {
+  height: 35px;
+ }
+
+ .nhsuk-header__container {
+  @include mq($until: desktop) {
+    padding: 14px 10px 10px;
+  }
+ }
+
+
+.search--active {
+  float: none;
+  background: red;
+  width: calc(100% - 40px);
+  position: absolute;
+  left: 20px;
+  right: 20px;
+}
+
+.search_highlight {
+  color: #034583;
+  font-weight: bold;
+}
+
+.nhsuk-list-signage a {
+  color: white!important;
+
+  &:visited {
+    color: white!important;
+  }
+
+}
+
+.nhsuk-header__container {
+  position: relative;
+}
+
+.ia-new-nav__item {
+  position: relative;
+}
+
+
+.ia-new-nav__item--active {
+  font-weight: bold;
+}
+
+.ia-new-nav__item--active:after {
+  content: " ";
+  display: block;
+  width: calc(100% - 30px);
+  height: 3px;
+  background: #ffb81c;
+  position: absolute;
+  margin-left: 15px;
+  margin-right: 15px;
+  bottom: 0;
+}
+
+.alpha-lab-breadcrumbs {
+  max-width: 960px;
+  margin: auto;
+  // padding: 0 5px;
+  // background: red;
+
+  .nhsuk-details__text {
+    border-left: none;
+  }
+
+  .nhsuk-details__summary {
+    display: block;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 5px;
+    border-bottom: 1px solid #e2e2e2;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-right: 15px;
+
+
+    .nhsuk-details__summary-text {
+      background-image: url("data:image/svg+xml,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%230057ab;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Eicon-chevron down_v1%3C/title%3E%3Cpath class='cls-1' d='M12,15.5a1,1,0,0,1-.71-.29l-5-5A1,1,0,0,1,7.71,8.79L12,13.09l4.29-4.3a1,1,0,0,1,1.42,1.42l-5,5A1,1,0,0,1,12,15.5Z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: 20px;
+      background-position: right 0;
+      padding-right: 22px;
+      text-decoration: none;
+    }
+
+
+    &:focus {
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+  }
+
+  .alpha-lab-breadcrumbs[open] > .nhsuk-details__summary:before,
+  .nhsuk-details__summary:before {
+    display: none!important;
+  }
+
+  .nhsuk-details__text {
+    background: white;
+    margin-top: 0;
+  }
+
+}
+
+
+.alpha-lab-breadcrumbs {
+  .nhsuk-details__summary:visited {
+    color: #005eb8!important;
+  }
+}
+
+
+.bradcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  a {
+    text-decoration: none;
+
+    &:visited {
+      color: #005eb8!important;
+    }
+
+  }
+
+}
+
+.alpha-lab-breadcrumbs .bradcrumbs {
+
+  li {
+    margin-left: 20px;
+    &:first-child {
+      margin-left: 0!important;
+    }
+  }
+
+}
+
+.bradcrumbs {
+  .bradcrumbs__item--active a {
+    color: black!important;
+    padding-left: 15px;
+    position: relative;
+
+    &:before {
+      content: " ";
+      display: block;
+      width: 5px;
+      height: 23px;
+      background-color: black;
+      position: absolute;
+      top: -1px;
+    }
+
+  }
+}
+
+////////////////////////////////////////////////
+// Canon promos and canon links
+////////////////////////////////////////////////
+
+//// arrowed canon promo boxes
+
+@mixin arrow {
+  position: absolute;
+  right: 24px;
+  top:50%;
+  margin-top: -8px;
+}
+
+.nhsuk-promo_canon{
+  position:relative;
+  .nhsuk-promo__content{
+    width:84%;
+    display:inline-block;
+    }
+  .arrow{
+    @include arrow;
+  }
+}
+
+.nhsuk-inset-text__arrow {
+  position: relative;
+  border-left-color: #AE2573;
+  p{
+    margin-bottom: 0;
+  }
+  .arrow {
+    @include arrow;
+  }
+}
+
+
+
+//// canon key task links
+
+.key-links{
+  padding:1.125em 0;
+  margin:0;
+  li{
+    list-style-type:none;
+    @extend h4;
+  }
+}
+
+.sub-head-link{
+  margin-bottom:8px;
+}
+
+
+.border-top {
+  border-top: 4px solid rgba(#ccc, 0.5);
+  margin-top: 25px;
+
+  padding-top: 45px;
+}
+
+.nhsuk-list-signage {
+
+}
+
+// .nhsuk-list-signage li {
+//   display: inline-block;
+//   margin: 2px 4px;
+//   width: calc(100% - 30px);
+//   margin-left: 16px;
+// }
+
+.app-side-nav__item--current {
+  border-left: 4px solid #000;
+  margin-left: -12px;
+  padding-left: 8px;
+  color:#000 !important;
+}
+
+
+.app-side-nav__item {
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+.app-side-nav__link {
+
+}
+
+
+.app-side-nav__list {
+
+  padding-left:12px;
+}
+
+.related-links  {
+  padding-left: 0px;
+  padding-top: 16px;
+}
+
+.related-links li {
+  list-style-type: none;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.55556;
+  font-weight: 300;
+  padding-bottom: 16px;
+}
+
+h4 + .nhsuk-inset-text {
+
+}
+
+.nhsuk-section--white {
+  background-color: #fff;
+}
+
+
+
+.nhsuk-global-alert {
+  background-color: #ffeb3b;
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+
+
+#nhsuk-cookie-banner ul, #nhsuk-cookie-banner li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 48.0625em) {
+  #nhsuk-cookie-banner li {
+      display: inline;
+      margin-right: 20px;
+  }
+}
+
+#nhsuk-cookie-banner .nhsuk-cookie-banner {
+  background: white;
+  position: relative;
+  box-shadow: 0 0 4px 0 #212b32;
+  padding: 24px 0 19px;
+  width: 100%;
+  z-index: 1;
+}
+
+.no-link {
+  color: #212b32;
+  text-decoration: none;
+
+  &:hover {
+    color: #212b32;
+    text-decoration: none!important;
+  }
+
+}
+
+.no-link-parent:hover {
+  text-decoration: none!important;
+
+  .link {
+    text-decoration: underline;
+  }
+}
+
+.nhsuk-header__search-form--search-results {
+  margin-bottom: 40px;
+  background-color: transparent;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  width: 100%;
+}
+
+.nhsuk-header__search-form {
+  height: 100%;
+  overflow: visible;
+}
+
+
+.nhsuk-header__search-form--search-results .autocomplete__input, .nhsuk-header__search-form--search-results .nhsuk-search__input {
+  -ms-flex-positive: 2;
+  -webkit-appearance: listbox;
+  background-color: #fff !important;
+  border-bottom: 1px solid #aeb7bd;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-left: 1px solid #aeb7bd;
+  border-right: 0;
+  border-top: 1px solid #aeb7bd;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 0;
+  flex-grow: 2;
+  font-size: inherit;
+  height: 52px;
+  margin: 0;
+  outline: none;
+  padding: 0 16px;
+  width: 100%;
+}
+
+
+.nhsuk-header__search-form--search-results .nhsuk-search__submit {
+  background-color: #007f3b;
+  border: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 4px;
+  float: right;
+  font-size: inherit;
+  height: 52px;
+  line-height: inherit;
+  margin: 0;
+  outline: none;
+  padding: 8px 8px 0;
+  width: 52px;
+}
+
+.nhsuk-header__search-form--search-results .nhsuk-search__submit .nhsuk-icon__search {
+  fill: #fff;
+  height: 38px;
+  width: 38px;
+}
+
+.nhsuk-list--border li>:first-child {
+  margin-top: 0;
+}
+
+.app-search-results-category {
+  color: #4c6272;
+  display: block;
+  font-size: 14px;
+}
+
+.app-search-results-item {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.55556;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+.nhsuk-list--border li:first-of-type {
+  border-top: 1px solid #d8dde0;
+  padding: 16px 0;
+}
+
+
+.nhsuk-list--border li {
+  border-bottom: 1px solid #d8dde0;
+  padding: 8px 0 16px;
+}
+
+.nhsuk-list>li, ul>li, ol>li {
+  margin-bottom: 8px;
+}
+
+.nhsuk-list--border li {
+  border-bottom: 1px solid #d8dde0;
+  padding: 8px 0 16px;
+}
+
+.nhsuk-list--border li>:last-child {
+  margin-bottom: 0;
+}
+
+
+
+/// GOV styles
+
+.facets__header {
+  display: none;
+}
+
+
+.app-c-expander {
+  padding: 0 0 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #b1b4b6;
+}
+
+
+.app-c-option-select {
+  position: relative;
+  padding: 0 0 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #b1b4b6;
+}
+
+
+.app-c-button-as-link {
+  padding: 0;
+  border-width: 0;
+  color: #1d70b8;
+  background: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  text-decoration: underline;
+  font-size: 16px;
+  font-family: "nta", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.facets__footer {
+  display: none;
+}
+
+
+/* ==========================================================================
+   COMPONENTS / #CARD
+   ========================================================================== */
+
+   $card-border-width: 1px;
+   $card-border-bottom-width: 4px;
+   $card-border-color: $color_nhsuk-grey-4;
+   $card-border-hover-color: $color_nhsuk-grey-3;
+   
+   .nhsuk-card {
+     @include nhsuk-responsive-margin(5, 'bottom');
+   
+     background: $color_nhsuk-white;
+     border: $card-border-width solid $card-border-color;
+     position: relative;
+     width: 100%;
+   }
+   
+   .nhsuk-card__img {
+     @include print-hide();
+   
+     display: block;
+     width: 100%;
+   }
+   
+   .nhsuk-card__content {
+     @include top-and-bottom();
+     @include nhsuk-responsive-padding(5);
+   
+     position: relative;
+   }
+   
+   .nhsuk-card__heading,
+   .nhsuk-card__metadata,
+   .nhsuk-card__description {
+     @include nhsuk-responsive-margin(4, 'bottom');
+   }
+   
+   /* Clickable card
+      ========================================================================== */
+   
+   .nhsuk-card--clickable {
+     border-bottom-width: $card-border-bottom-width;
+   
+     &:hover,
+     &:active {
+       cursor: pointer;
+   
+       .nhsuk-card__heading a,
+       .nhsuk-card__link {
+         color: $nhsuk-link-hover-color;
+         text-decoration: none;
+   
+         &:focus {
+           color: $nhsuk-focus-text-color;
+         }
+       }
+   
+     }
+   
+     &:hover {
+       border-color: $card-border-hover-color;
+     }
+   
+     &:active {
+       border-color: $card-border-hover-color;
+       bottom: - $card-border-width;
+     }
+   }
+   
+   /* Card video
+     ========================================================================== */
+   
+   .nhsuk-card__video {
+     height: 0;
+     max-width: 100%;
+     overflow: hidden;
+     padding-bottom: 56.25%;
+     position: relative;
+   
+     iframe,
+     object,
+     embed {
+       border: 0;
+       height: 100%;
+       left: 0;
+       position: absolute;
+       top: 0;
+       width: 100%;
+     }
+   }
+   
+   /* Card feature
+      ========================================================================== */
+   
+   .nhsuk-card--feature {
+     @include nhsuk-responsive-margin(7, 'top');
+   
+     + .nhsuk-card--feature {
+       @include nhsuk-responsive-margin(6, 'top');
+     }
+   }
+   
+   .nhsuk-card__heading--feature {
+     @include nhsuk-font($size: 24, $weight: bold);
+   
+     background: $color_nhsuk-blue;
+     color: $color_nhsuk-white;
+     display: inline-block;
+     left: - $card-border-width;
+     padding: nhsuk-spacing(2) nhsuk-spacing(3);
+     position: absolute;
+     top: - nhsuk-spacing(3);
+   
+     @include mq($from: desktop) {
+       padding: nhsuk-spacing(2) nhsuk-spacing(4);
+     }
+   }
+   
+   .nhsuk-card__content--feature {
+     @include nhsuk-responsive-padding(7, 'top');
+   }
+   
+   /* Card group
+      ========================================================================== */
+   
+   /**
+    * Card group allows you to have a row of cards.
+    *
+    * Flexbox is used to make each card in a row the same height.
+    */
+   
+   .nhsuk-card-group {
+     @include flex();
+     @include nhsuk-responsive-margin(2, 'bottom');
+   
+     padding: 0;
+   }
+   
+   .nhsuk-card-group__item {
+     @include flex-item();
+   
+     margin-bottom: 0;
+     list-style-type: none;
+   
+     .nhsuk-card {
+       @include nhsuk-responsive-margin(5, 'bottom');
+     }
+   
+     @include mq($until: desktop) {
+   
+       &:last-child {
+         margin-bottom: 0;
+       }
+     }
+   
+     .nhsuk-card--feature {
+       margin-top: 0;
+     }
+   }
+   
+   .nhsuk-card-group--list {
+     @include mq($until: desktop) {
+   
+       .nhsuk-card-group__item {
+         &:not(:last-child){
+           .nhsuk-card {
+             border-bottom-width: 0;
+             margin-bottom: 0;
+           }
+         }
+       }
+     }
+   }
+   
+   /* Card full width
+      ========================================================================== */
+   
+   .nhsuk-card-full-width {
+     @include mq($until: desktop) {
+       margin-left: - $nhsuk-gutter-half;
+       margin-right: - $nhsuk-gutter-half;
+   
+       .nhsuk-card-group__item {
+         padding: 0;
+       }
+   
+       .nhsuk-card {
+         border-left-width: 0;
+         border-right-width: 0;
+       }
+     }
+   }
+   
+   /* Card app
+      ========================================================================== */
+   
+     .nhsuk-card--app{
+       border-bottom-width: $card-border-width;
+   
+       .nhsuk-card__content {
+         @include top-and-bottom();
+         @include nhsuk-responsive-padding(4);
+       }
+   
+       .nhsuk-card__heading {
+         @include nhsuk-responsive-margin(3, 'bottom');
+       }
+     }
+   
+   /* With icon
+      ========================================================================== */
+   
+      .nhsuk-card--icon {
+       background-image: url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__chevron-right' xmlns='http://www.w3.org/2000/svg' fill='%23768692' height='40' width='40' viewBox='0 0 24 24' aria-hidden='true'%3E%3Cpath d='M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z'%3E%3C/path%3E%3C/svg%3E"); // sass-lint:disable-line quotes
+       background-position: right 8px top 50%;
+       background-repeat: no-repeat;
+   
+       @include mq($until: desktop) {
+         background-position: right 4px top 50%;
+       }
+     
+       &:hover {
+         background-image: url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__chevron-right' xmlns='http://www.w3.org/2000/svg' fill='%237C2855' height='40' width='40' viewBox='0 0 24 24' aria-hidden='true'%3E%3Cpath d='M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z'%3E%3C/path%3E%3C/svg%3E"); // sass-lint:disable-line quotes
+       }
+     
+       a {
+         text-decoration: none;
+       }
+     
+       .nhsuk-card__content {
+         @include nhsuk-responsive-padding(8, 'right');
+       }
+     
+       &.nhsuk-card--clickable {
+         &:hover,
+         &:active {
+           a {
+             text-decoration: underline;
+     
+             &:hover {
+               text-decoration: underline;
+             }
+     
+             &:focus {
+               text-decoration: none;
+             }
+           }
+         }
+       }
+     }
+   
+   /* Colour variations
+      ========================================================================== */
+   
+   .nhsuk-card--grey {
+     background-color: $color_nhsuk-grey-5;
+   }
+   
+   .nhsuk-card--green {
+     background-color: shade($color_nhsuk-green, 10%);
+     border-color: shade($color_nhsuk-green, 50%);
+   
+     &.nhsuk-card--clickable {
+       &:hover{ 
+         background-color: shade($color_nhsuk-green, 30%);
+         border-color: shade($color_nhsuk-green, 80%);
+   
+         a {
+           color: $color_nhsuk-white;
+         }
+       }
+     }
+   }
+   
+   .nhsuk-card--blue {
+     background-color: shade($color_nhsuk-blue, 10%);
+     border-color: shade($color_nhsuk-blue, 50%);
+   
+     &.nhsuk-card--clickable {
+       &:hover{ 
+         background-color: shade($color_nhsuk-blue, 30%);
+         border-color: shade($color_nhsuk-blue, 80%);
+   
+         a {
+           color: $color_nhsuk-white;
+         }
+       }
+     }
+   }
+   
+   .nhsuk-card--green,
+   .nhsuk-card--blue {
+     color: $color_nhsuk-white;
+   
+     .nhsuk-card__caption {
+       color: $color_nhsuk-white;
+     }
+   
+     &.nhsuk-card--clickable a,
+     a {
+         @include nhsuk-link-style-white;
+     }
+   
+     &.nhsuk-card--icon,
+     &.nhsuk-card--icon:hover {
+       background-image: url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__chevron-right' xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' height='40' width='40' viewBox='0 0 24 24' aria-hidden='true'%3E%3Cpath d='M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z'%3E%3C/path%3E%3C/svg%3E"); // sass-lint:disable-line quotes
+     }
+   }
+   
+   /* No border
+      ========================================================================== */
+   
+   .nhsuk-card--no-border {
+     border: 0;
+   }

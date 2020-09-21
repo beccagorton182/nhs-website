@@ -3,7 +3,7 @@
 <!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
 
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout.html' %}
+{% extends 'layout-blank.html' %}
 <!-- 
   In /views/layout.html you can:
     - change the header and footer 
@@ -23,7 +23,7 @@
 <!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
   <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-two-thirds">
+    <div class="nhsuk-grid-column-full">
 
       <!-- Change the page title here -->
       <h1>
@@ -41,7 +41,7 @@
       <hr>
 
       <div class="nhsuk-grid-row">
-        <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+        <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
           <div class="nhsuk-promo">
             <a class="nhsuk-promo__link-wrapper" href="find-an-ae">
               <div class="nhsuk-promo__content">
@@ -50,11 +50,20 @@
             </a>
           </div>
         </div>
-        <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+        <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
           <div class="nhsuk-promo">
             <a class="nhsuk-promo__link-wrapper" href="crisis-support-finder">
               <div class="nhsuk-promo__content">
                 <h2 class="nhsuk-promo__heading">Find an urgent NHS mental health helpline</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="mental-health-ia">
+              <div class="nhsuk-promo__content">
+                <h2 class="nhsuk-promo__heading">Mental health information architecture </h2>
               </div>
             </a>
           </div>
