@@ -11,6 +11,32 @@
 // Add your custom CSS/Sass styles below... 
 ///////////////////////////////////////////
 
+//promo bullets
+.nhsuk-promo__link-wrapper ul > li{
+  margin: 0;
+  padding: 0;
+  color:#4C6272;
+}
+
+
+//wrapper override
+
+.nhsuk-main-wrapper {
+  margin: 0 !important;
+  padding: 20px !important;
+}
+
+//External links
+.nhsuk-external-link {
+  list-style-type: none;
+  padding-left: 0;
+  
+}
+
+.nhsuk-external-link li {
+  padding-bottom:20px;
+
+}
 
 //Global alert banner
 .nhsuk-global-alert {
