@@ -1,0 +1,180 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-newia.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Mental Health
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row nhsuk-u-margin-top-0">
+    <div class="nhsuk-grid-column-full nhsuk-u-margin-top-0">
+
+      <nav class="nhsuk-u-margin-bottom-3 nhsuk-u-margin-0" aria-label="Breadcrumb">
+        <div>
+          <ol class="nhsuk-breadcrumb__list ">
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="">Home</a></li>
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="../mental-health">Mental health</a></li>
+            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="../level-one/feelings">Feelings, symptoms and behaviours</a></li>
+            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="../level-two/symptoms">Symptoms and behaviours</a></li>
+          </ol>
+          <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="../level-two/symptoms">Symptoms and behaviours</a></p>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+  <div class="nhsuk-grid-row nhsuk-u-margin-top-0">
+    <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-top-0">
+      
+
+      <!-- Change the page title here -->
+      <h1>
+      Help for suicidal thoughts
+    
+      </h1>
+
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+
+     
+    
+    
+
+
+     <p><strong>If you're feeling like you want to die, it's important to tell someone.</strong></p>
+     <p>Help and support is available right now if you need it. You do not have to struggle with difficult feelings alone.</p>
+
+     <h2>Phone a helpline</h2>
+     <p>These free helplines are there to help when you're feeling down or desperate.</p>
+      <p>Unless it says otherwise, they're open 24 hours a day, every day.</p>
+
+    <h3>Samaritans</h3>
+      <nav role="navigation">
+        <ul class="nhsuk-external-link">
+          <li><a href="">Samaritans: For everyone </a>
+            <div>www.samaritans.org</div>
+            </li> 
+            <li>Email: jo@samaritans.org</li>
+            <li><tel>Phone: 116 123</tel> 
+            </li>
+           
+        </ul>
+
+      </nav>
+    
+      <h3>CALM</h3>
+      <nav role="navigation">
+        <ul class="nhsuk-external-link">
+          <li><a href="">CALM: for men </a>
+            <div>www.calm.org.uk</div>
+            </li> 
+            <li><a href="">CALM: webchat </a>
+              <div>www.calm.org.uk</div>
+              </li> 
+           
+            <li><tel>Phone: 0800 58 58 58</tel> (5pm to midnight every day)
+            </li>
+           
+        </ul>
+
+      </nav>
+
+      <h3>Papyrus</h3>
+      <nav role="navigation">
+        <ul class="nhsuk-external-link">
+          <li><a href="">Papyrus: for people under 35 </a>
+            <div>www.papyrus-uk.org</div>
+            </li> 
+            <li>Email: pat@papyrus-uk.org </li>
+            <li>Text: 07860 039967</li>
+            <li><tel>Phone: Call 0800 068 41 41</tel> (Monday to Friday 9am to 10pm, weekends and bank holidays 2pm to 10pm)
+            </li>
+           
+        </ul>
+
+      </nav>
+      <h3>Childline</h3>
+      <nav role="navigation">
+        <ul class="nhsuk-external-link">
+          <li><a href="">Childline: for children and young people under 19 </a>
+            <div>www.childline.org.uk</div>
+            </li> 
+            <li><tel>Phone: Call 0800 1111</tel> (the number will not show up on your phone bill)
+            </li>
+           
+        </ul>
+
+      </nav>
+      
+      <h2>Talk to someone you trust</h2>
+      <p>Let family or friends know what's going on for you. They may be able to offer support and help keep you safe.</p>
+      <p>There's no right or wrong way to talk about suicidal feelings – starting the conversation is what's important.</p>
+
+      <h2>Who else you can talk to</h2>
+      <p>If you find it difficult to talk to someone you know, you could:</p>
+      <ul>
+        <li><strong>call a GP</strong> – ask for an emergency appointment</li>
+        <li><strong>call 111</strong> – out of hours – they will help you find the support and help you need</li>
+        <li><strong>contact your mental health crisis team</strong> – if you have one</li>
+      </ul>
+    
+      <div class="nhsuk-warning-callout">
+        <h3 class="nhsuk-warning-callout__label">Important</h3>
+        <h2>Is your life in danger?</h2><p>If you have seriously harmed yourself – for example, by taking a drug overdose – call 999 for an ambulance or go straight to A&amp;E.</p><p>Or ask someone else to call 999 or take you to A&amp;E.</p>
+      </div>
+
+      <h2>Tips for coping now</h2>
+      <ul><li>try not to think about the future – just focus on getting through today</li>
+        <li>stay away from drugs and alcohol</li>
+        <li>get yourself to a safe place, like a friend's house</li>
+        <li>be around other people</li>
+        <li>do something you usually enjoy, such as spending time with a pet</li></ul>
+        <p>See <a href="#out">more tips from Rethink</a>.</p>
+  
+      
+
+        <h2>Worried about someone else?</h2>
+        <p>If you're worried about someone, try to get them to talk to you. Ask open-ended questions like: "How do you feel about...?"</p>
+        <p>Do not worry about having the answers. Just listening to what someone has to say and taking it seriously can be more helpful.</p>
+        <p>See Samaritan's tips on <a href="#sam">how to start a difficult conversation</a>.</p>
+        <p>Rethink also has advive on <a href="#rethink">how to support someone who is having suicidal thoughts</a>.</p>
+      
+        <div class="nhsuk-inset-text">
+          <span class="nhsuk-u-visually-hidden">Information: </span>
+          <h3><b>Making a safety plan</b></h3><p>If you struggle with suicidal thoughts or are supporting someone else, it may help to make a safety plan to use if you need it:</p><ul><li>the <a href="#safe">Staying Safe website</a> provides information on how to make a safety plan, including video tutorials and online templates to guide you through the process</li><li>the mental health charity Mind also provides information on <a href="#planning-for-a-crisis/">planning for a mental health crisis</a></li></ul>
+        </div>
+  </div>
+
+</div>
+<hr>
+<div class="nhsuk-grid-row ">
+  <div class="nhsuk-grid-column-two-thirds nhsuk-promo-group__item">
+      <ul class="key-links">
+          <h2>Related information</h2>
+          <li><a href="low-mood">Low mood, sadness and depression</a></li>
+          <li><a href="#esteem/">Low self-esteem</a></li>
+          <li><a href="#lonely/">Feeling lonely</a></li>
+          <li><a href="self-harm">Where to get help for self-harm</a></li>
+      </ul>
+
+      </div>
+      </div>
+     <!-- End of content -->
+  
+{% endblock %}
