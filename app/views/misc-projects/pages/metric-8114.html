@@ -1,0 +1,120 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  NHS.UK prototypes - Becca
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    <div class="nhsuk-back-link">
+      <a class="nhsuk-back-link__link" href="#">
+        <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+        </svg>
+        Back to find a hospital</a>
+    </div>
+
+    <!-- Change the page title here -->
+    <h1>
+      Overall views and experiences
+    
+    </h1>
+
+    <!-- Add your content here -->
+    <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+
+  <h2 class="nhsuk-heading-m">What this data shows:</h2>
+  <p>This measure shows the overall patient experience score for people who received community mental health services who have told the Care Quality Commission about their experiences of care and treatment.</p>
+
+  <h2 class="nhsuk-heading-m">How the data is gathered:</h2>
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+       Read how the data is gathered
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+    <p>This indicator is based on the results of the Community Mental Health Survey which looked at the experiences of people aged 18 and over receiving community mental health services. It is based on the average score given for 3 survey questions:</p>
+      <ol>
+        <li>In the last 12 months do you feel you have seen NHS mental health services often enough for your needs?;</li>
+        <li> Overall in the last 12 months, did you feel that you were treated with dignity and respect by NHS mental health services?; and</li>
+        <li> the general overall question "Overall...".</li>
+        <p>These questions form the overall views and experiences section of the Community Mental Health Survey. The numbers given for the indicator are average scores out of 10.</p>
+        <p>The people covered by this survey are those who received care or treatment for a mental health condition in community services (secondary care), including services provided under the Care Programme Approach (CPA). It does not include people who were only seen once for an assessment, current inpatients and anyone primarily receiving treatment in specific areas such as drug and alcohol abuse, learning disability services and specialist forensic services.</p>
+
+      </ol>
+  </div>
+  </details>
+
+  <h2 class="nhsuk-heading-m">When the data is shown:</h2>
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+       Read about when the data is shown
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+    <p>Two of the questions included in this indicator were scored from the survey with either 0, 5, or 10. A score of 10 represented a response of "Yes" or "Yes, definitely". A score of 5 represented a response of "yes, to some extent", whilst negative or non-applicable responses were scored with a 0. The "Overall..." question was scored as an overall response for whether they felt their experience was good or poor on a scale of 0-10 (with 10 being good). From this, numerator values were created by multiplying each participant's numerical response to a question by the statistical weighting given to each respondant (i.e. adjusted for factors that may interfere with the results). This weighting was based on age and sex variation between trusts. The denominator was calculated by allocating a score of 1 to each question the participant responded to, and multiplying this by the weighted value. Then, a weighted mean score for each trust was calculated by dividing the sum of the participant numerators for each question by the sum of all people who responded in that trust. An overall mean score for each trust was then calculated as the average score across these 3 questions. Therefore, a score closer to 10 is a higher score than one closer to 0. Green Tick: For this indicator, trust scores are based on answers by a random subset of patients. We give a Green Tick to trusts whose patient experience score is statistically significantly above the average score. This means that we are highly confident that the score would be above average even if all patients would be asked by the survey.</p>
+    <p>Blue OK Rating: For this indicator, trust scores are based on answers by a random subset of patients. We give a Blue OK Rating to trusts whose patient experience score is not statistically different from the average score. This means that even if the measured trust score is different from the average score, we are not sufficiently confident that it would still differ if all patients were asked by the survey.</p>
+    <p>Red Exclamation Mark: For this indicator, trust scores are based on answers by a random subset of patients. We give a Red Exclamation Mark to trusts whose patient experience score is statistically significantly below the average score. This means that we are highly confident that the score would be below average even if all patients would be asked by the survey.</p>
+    
+    </div>
+  </details>
+  
+  <h2 class="nhsuk-heading-m">More information about the data source:</h2>
+  <p>For further information about the Community Mental Health Survey visit the following website <a href="http://www.cqc.org.uk/content/community-mental-health-survey-2014"></a></p>
+
+  <h2 class="nhsuk-heading-m">Data source:</h2>
+  <p>Community Mental Health Survey, Care Quality Commission</p>
+
+  <h2 class="nhsuk-heading-m">How often the data is updated:</h2>
+  <p>Annual 2018</p>
+
+  <h2 class="nhsuk-heading-m">Technical information about this data:</h2>
+  <details class="nhsuk-details nhsuk-expander">
+    <summary class="nhsuk-details__summary">
+      <span class="nhsuk-details__summary-text">
+       Read more technical information about this data
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+    <p>These data are published annually.</p>
+    <p>Results are based on ‘standardised’ data. We know that the views of a respondent can reflect not only their experience of NHS services, but can also relate to certain demographic characteristics, such as their age and sex. For example, older respondents tend to report more positive experiences than younger respondents, and women tend to report less positive experiences than do men. Because the mix of service users varies across trusts (for example, one trust may serve a considerably older population than another), this could potentially lead to the results for a trust appearing better or worse than they would if they had a slightly different profile of service users. To account for this we ‘standardise’ the data.</p>
+ 
+    <p>Standardising data adjusts for these differences and enables the results for trusts to be compared more fairly than could be achieved using non-standardised data.</p>
+    </div>
+  </details>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+      <!-- End of content -->
+
+    </div>
+  </div>
+{% endblock %}
