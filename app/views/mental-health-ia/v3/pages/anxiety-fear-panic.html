@@ -1,0 +1,394 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-newia.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Mental Health
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row nhsuk-u-margin-top-0">
+    <div class="nhsuk-grid-column-full nhsuk-u-margin-top-0">
+
+      <nav class="nhsuk-u-margin-bottom-3 nhsuk-u-margin-0" aria-label="Breadcrumb">
+        <div>
+          <ol class="nhsuk-breadcrumb__list ">
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="">Home</a></li>
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="../mental-health">Mental health</a></li>
+            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="../level-one/feelings">Feelings, symptoms and behaviours</a></li>
+            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="../level-two/feelings">Feelings</a></li>
+          
+          </ol>
+          <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="../level-two/feelings">Feelings</a></p>
+        </div>
+      </nav>
+</div>
+</div>
+      <div class="nhsuk-grid-row nhsuk-u-margin-top-0">
+        <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-top-0">
+
+      <!-- Change the page title here -->
+      <h1>
+       
+        Anxiety, fear and panic
+      </h1>
+
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+
+ 
+      <p class="nhsuk-body"><strong>
+        Most people feel anxious or scared sometimes, but if it's affecting your life there are things you can try that may help.</p></strong>
+
+      <p class="nhsuk-body">Support is also available if you're finding it hard to cope with anxiety, fear or panic.</p>
+
+    
+  
+     
+     <h2>Symptoms of anxiety</h2>
+     <p>Anxiety can cause many different symptoms. It might affect how you feel physically, mentally and how you behave.</p>
+     <p>It's not always easy to recognise when anxiety is the reason you're feeling or acting differently.</p>
+    
+     <div class="nhsuk-expander-group">
+
+  
+    
+      <details class="nhsuk-details nhsuk-expander" nhsuk-polyfilled="true" id="nhsuk-details0">
+        <summary class="nhsuk-details__summary" role="button" aria-controls="nhsuk-details__text0" tabindex="0" aria-expanded="false">
+          <span class="nhsuk-details__summary-text">
+          Physical symptoms
+          </span>
+        </summary>
+        <div class="nhsuk-details__text" id="nhsuk-details__text0" aria-hidden="true">
+          
+            <ul><li>faster, irregular or more noticeable heartbeat</li><li>feeling lightheaded and dizzy</li><li>headaches</li><li>chest pains</li><li>loss of appetite</li></ul>
+          
+        </div>
+      </details>
+      
+      
+        
+          
+      <details class="nhsuk-details nhsuk-expander" nhsuk-polyfilled="true" id="nhsuk-details1">
+        <summary class="nhsuk-details__summary" role="button" aria-controls="nhsuk-details__text1" tabindex="0" aria-expanded="false">
+          <span class="nhsuk-details__summary-text">
+          Mental symptoms
+          </span>
+        </summary>
+        <div class="nhsuk-details__text" id="nhsuk-details__text1" aria-hidden="true">
+          
+            <ul><li>feeling tense or nervous</li><li>being unable to relax</li><li>worrying about the past or future</li><li>feeling tearful</li><li>not being able to sleep</li></ul>
+          
+        </div>
+      </details>
+      
+      
+        
+          
+      <details class="nhsuk-details nhsuk-expander" nhsuk-polyfilled="true" id="nhsuk-details2">
+        <summary class="nhsuk-details__summary" role="button" aria-controls="nhsuk-details__text2" tabindex="0" aria-expanded="false">
+          <span class="nhsuk-details__summary-text">
+          Changes in behaviour
+          </span>
+        </summary>
+        <div class="nhsuk-details__text" id="nhsuk-details__text2" aria-hidden="true">
+          
+            <ul><li>not being able to enjoy your leisure time</li><li>difficulty looking after yourself</li><li>problems concentrating at work</li><li>struggling to form or maintain relationships</li><li>worried about trying new things</li></ul>
+          
+        </div>
+      </details>
+      
+      
+        
+      
+      </div>
+
+
+     <h3>Symptoms of a panic attack</h3>
+     <p>If you experience sudden, intense anxiety and fear, it might be the symptoms of a panic attack. Other symptoms may include:</p>
+
+     <ul class="nhsuk-list nhsuk-list--bullet">
+       <li>feeling that you're losing control</li>
+       <li>sweating, trembling or shaking</li>
+       <li>shortness of breath or breathing very quickly</li>
+       <li>feeling sick (nausea)</li>
+      </ul>
+      <p>A panic attack usually lasts 5 to 30 minutes. They can be very frightening, but they're not dangerous and should not harm you.</p>
+
+      <div class="nhsuk-inset-text">
+        <span class="nhsuk-u-visually-hidden">Information: </span>
+        <p>If you're not sure how you feel, try our <a href="#stuff/" title="Internal link">mood self-assessment</a>.</p>
+      </div>
+  
+
+    <h2>Things you can try to help with anxiety, fear and panic</h2>
+    <div class="nhsuk-do-dont-list">
+      <h3 class="nhsuk-do-dont-list__label">
+        Do
+      </h3>
+      <ul class="nhsuk-list nhsuk-list--tick">
+        
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12"></path>
+          </svg>
+          <p>try talking about your feelings to a friend, family member, health professional or counsellor. You could also contact <a href="#contact-samaritan/">Samaritans</a>, <a href="Tel: 116 123">call: 116 123</a> or email: <a href="mailto:jo@samaritans.org">jo@samaritans.org</a> if you need someone to talk to</p>
+        </li>
+        
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12"></path>
+          </svg>
+          <p>use <a href="#ways-relieve-stress/">calming breathing exercises</a></p>
+        </li>
+        
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12"></path>
+          </svg>
+          <p><a href="#exercise/">exercise</a> – activities such as running, walking, swimming and yoga can help you relax</p>
+        </li>
+        
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12"></path>
+          </svg>
+          <p>find out <a href="#how-to-get-to-sleep/">how to get to sleep</a> if you're struggling to sleep</p>
+        </li>
+        
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12"></path>
+          </svg>
+          <p>eat <a href="/live-well/eat-well/">a healthy diet</a> with regular meals to keep your energy levels stable</p>
+        </li>
+        
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12"></path>
+          </svg>
+          <p>consider peer support, where people use their experiences to help each other. <a href="#finding-peer-support/">Find out more about peer support</a> on the Mind website</p>
+        </li>
+        
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12"></path>
+          </svg>
+          <p>listen to <a href="#moodzone-mental-wellbeing-audio-guides/">free mental wellbeing audio guides</a></p>
+        </li>
+        
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12"></path>
+          </svg>
+          <p>search and download <a href="#app-mental-health/">relaxation and mindfulness apps</a> or <a href="#online-community/">online community apps</a> from the NHS apps library</p>
+        </li>
+        
+      </ul>
+    </div>
+
+    <div class="nhsuk-do-dont-list">
+      <h3 class="nhsuk-do-dont-list__label">
+        Don’t
+      </h3>
+      <ul class="nhsuk-list nhsuk-list--cross">
+        
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17 18.5c-.4 0-.8-.1-1.1-.4l-10-10c-.6-.6-.6-1.6 0-2.1.6-.6 1.5-.6 2.1 0l10 10c.6.6.6 1.5 0 2.1-.3.3-.6.4-1 .4z"></path>
+            <path d="M7 18.5c-.4 0-.8-.1-1.1-.4-.6-.6-.6-1.5 0-2.1l10-10c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2.1l-10 10c-.3.3-.6.4-1 .4z"></path>
+          </svg>
+          <p>do not try to do everything at once – set small targets that you can easily achieve</p>
+        </li>
+        
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17 18.5c-.4 0-.8-.1-1.1-.4l-10-10c-.6-.6-.6-1.6 0-2.1.6-.6 1.5-.6 2.1 0l10 10c.6.6.6 1.5 0 2.1-.3.3-.6.4-1 .4z"></path>
+            <path d="M7 18.5c-.4 0-.8-.1-1.1-.4-.6-.6-.6-1.5 0-2.1l10-10c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2.1l-10 10c-.3.3-.6.4-1 .4z"></path>
+          </svg>
+          <p>do not focus on the things you cannot change – focus your time and energy into helping yourself feel better</p>
+        </li>
+        
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17 18.5c-.4 0-.8-.1-1.1-.4l-10-10c-.6-.6-.6-1.6 0-2.1.6-.6 1.5-.6 2.1 0l10 10c.6.6.6 1.5 0 2.1-.3.3-.6.4-1 .4z"></path>
+            <path d="M7 18.5c-.4 0-.8-.1-1.1-.4-.6-.6-.6-1.5 0-2.1l10-10c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2.1l-10 10c-.3.3-.6.4-1 .4z"></path>
+          </svg>
+          <p>do not avoid situations that make you anxious – try slowly building up time spent in worrying situations to gradually reduce anxiety</p>
+        </li>
+        
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17 18.5c-.4 0-.8-.1-1.1-.4l-10-10c-.6-.6-.6-1.6 0-2.1.6-.6 1.5-.6 2.1 0l10 10c.6.6.6 1.5 0 2.1-.3.3-.6.4-1 .4z"></path>
+            <path d="M7 18.5c-.4 0-.8-.1-1.1-.4-.6-.6-.6-1.5 0-2.1l10-10c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2.1l-10 10c-.3.3-.6.4-1 .4z"></path>
+          </svg>
+          <p>try not to tell yourself that you're alone; most people experience anxiety or fear at some point in their life</p>
+        </li>
+        
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17 18.5c-.4 0-.8-.1-1.1-.4l-10-10c-.6-.6-.6-1.6 0-2.1.6-.6 1.5-.6 2.1 0l10 10c.6.6.6 1.5 0 2.1-.3.3-.6.4-1 .4z"></path>
+            <path d="M7 18.5c-.4 0-.8-.1-1.1-.4-.6-.6-.6-1.5 0-2.1l10-10c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2.1l-10 10c-.3.3-.6.4-1 .4z"></path>
+          </svg>
+          <p>try not to use alcohol, cigarettes, gambling or drugs to relieve anxiety as these can all contribute to poor mental health</p>
+        </li>
+        
+      </ul>
+    </div>
+
+    
+
+    
+   
+    <div class="nhsuk-inset-text">
+      <span class="nhsuk-u-visually-hidden">Information: </span>
+      <h3>Further information and support</h3>
+      <p>The mental health charity Mind offers more information on:</p>
+      <ul>
+        <li>
+          <a href="">self-care for anxiety</a></li>
+          <li><a href="">understanding panic attacks</a></li>
+        </ul>
+          <p><a href="#your-mind-plan-quiz/">Your Mind Plan</a> on the Every Mind Matters website sends personalised tips and advice to your email inbox.</p>
+    </div>
+
+
+    <h2>Where to get NHS help for anxiety, fear and panic</h2>
+    <h3>Referring yourself for therapy</h3>
+    <p>If you need more support, you can get free psychological therapies such as <a href="">cognitive behavioural therapy (CBT)</a> on the NHS.</p>
+    <p>You can refer yourself directly to a psychological therapies service without a referral from a GP.</p>
+    <div class="nhsuk-action-link">
+      <a class="nhsuk-action-link__link" href="IAPT-start">
+        <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+        </svg>
+        <span class="nhsuk-action-link__text">Find a psychological therapies service in your area</span>
+      </a>
+    </div>
+    <div class="nhsuk-care-card nhsuk-care-card--primary">
+      <div class="nhsuk-care-card__heading-container">
+        <h3 class="nhsuk-care-card__heading">
+          <span role="text">
+            <span class="nhsuk-u-visually-hidden">Non-urgent advice:  </span>See a GP if:
+          </span>
+        </h3>
+        <span class="nhsuk-care-card__arrow" aria-hidden="true"></span>
+      </div>
+      <div class="nhsuk-care-card__content">
+        
+          <ul>
+    <li>you're struggling to cope with anxiety, fear or panic</li>
+    <li>things you're trying yourself are not helping</li>
+    <li>you would prefer to get a referral from a GP</li>
+    </ul>
+    
+        
+        
+          <div class="nhsuk-inset-text">
+      <span class="nhsuk-u-visually-hidden">Information: </span>
+      <h3>Coronavirus update: how to contact a GP</h3><p>It's still important to get help from a GP if you need it. To contact your GP surgery:</p><ul><li>visit their website</li><li>use the <a href="/using-the-nhs/nhs-services/the-nhs-app/">NHS App</a></li><li>call them</li></ul><p><a href="/conditions/coronavirus-covid-19/social-distancing/using-the-nhs-and-other-health-services/">Find out about using the NHS during coronavirus</a></p>
+    </div>
+    
+        
+      </div>
+    </div>
+
+    <div class="nhsuk-care-card nhsuk-care-card--urgent">
+      <div class="nhsuk-care-card__heading-container">
+        <h3 class="nhsuk-care-card__heading">
+          <span role="text">
+            <span class="nhsuk-u-visually-hidden">Urgent advice: </span>Call 111 or ask for an urgent GP appointment if:
+          </span>
+        </h3>
+        <span class="nhsuk-care-card__arrow" aria-hidden="true"></span>
+      </div>
+      <div class="nhsuk-care-card__content">
+        
+          <ul>
+    <li>you need help urgently, but it's not an emergency</li>
+    </ul>
+    <p>111 can tell you the right place to get help if you need to see someone. Go to <a href="#111">111.nhs.uk</a> or <a href="Tel: 111">call: 111</a></p>
+    
+        
+        
+      </div>
+    </div>
+
+
+    <div class="nhsuk-care-card nhsuk-care-card--immediate">
+      <div class="nhsuk-care-card__heading-container">
+        <h3 class="nhsuk-care-card__heading">
+          <span role="text">
+            <span class="nhsuk-u-visually-hidden">Immediate action required: </span>Call 999 or go to A&amp;E now if:
+          </span>
+        </h3>
+        <span class="nhsuk-care-card__arrow" aria-hidden="true"></span>
+      </div>
+      <div class="nhsuk-care-card__content">
+        
+          <ul>
+    <li>you or someone you know needs immediate help</li>
+    <li>you have seriously harmed yourself – for example, by taking a drug overdose </li>
+    </ul>
+    <p>A mental health emergency should be taken as seriously as a medical emergency.</p>
+    <p><a href="#ae/">Find your nearest A&amp;E</a></p>
+    
+        
+        
+      </div>
+    </div>
+
+    <h2>Causes of anxiety, fear and panic</h2>
+    <p>There are many different causes of anxiety, fear or panic and it's different for everyone.</p>
+    <p>When you're feeling anxious or scared, your body releases stress hormones, such as adrenaline and cortisol.</p>
+    <p>This can be helpful in some situations, but it might also cause physical symptoms such as an increased heart rate and increased sweating. In some people, it might cause a panic attack.</p>
+    <p>Regular anxiety, fear or panic can also be the main symptom of several health conditions. Do not self-diagnose – speak to a GP if you're worried about how you're feeling.</p>
+
+    <h3>Identifying the cause</h3>
+    <p>If you know what's causing anxiety, fear or panic, it might be easier to find ways to manage it.</p>
+    <p>Some examples of possible causes include:</p>
+    <ul><li>work – feeling pressure at work, unemployment or retirement</li>
+      <li>family – relationship difficulties, divorce or <a href="/">caring for someone</a></li>
+      <li>financial problems – unexpected bills or borrowing money</li>
+      <li>health – illness, injury or <a href="grief">losing someone</a> (bereavement)</li>
+      <li>difficult past experiences – bullying, abuse or neglect</li>
+    </ul>
+
+      <p>Even significant life events such as buying a house, having a baby or planning a wedding could lead to feelings of stress and anxiety.</p>
+      <p>You might find it hard to explain to people why you feel this way, but talking to someone could help you find a solution.</p>
+      <p>Find out more about the <a href="">5 steps to mental wellbeing.</a></p>
+  </div>
+</div>
+
+<div class="nhsuk-grid-row ">
+  <div class="nhsuk-grid-column-two-thirds nhsuk-promo-group__item">
+      <ul class="key-links">
+          <h2>Related information</h2>
+          <li><a href="#sad">Generalised anxiety disorder</a></li>
+          <li><a href="#pnd">Phobias</a></li>
+          <li><a href="#mind">Panic disorder</a></li>
+          <li><a href="#exercise">Post-traumatic stress disorder (PTSD)</a></li>
+      </ul>
+
+      </div>
+      </div>
+
+     <!-- End of content -->
+  
+{% endblock %}

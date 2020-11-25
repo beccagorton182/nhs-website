@@ -1,0 +1,244 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-newia-symp.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Mental Health
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full nhsuk-u-margin-bottom-8">
+
+      <!-- Change the page title here -->
+      <h1>
+       Check a symptom
+      
+      </h1>
+
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+      <div class="nhsuk-inset-text">
+        <span class="nhsuk-u-visually-hidden">Information: </span>
+        <h3 class="nhsuk-heading-s">If you need help now, and you're not sure what to do</h3>
+        <p>Go to <a href="javascript:void(0);" title="External website">111.nhs.uk</a> or call 111.</p>
+      </div>
+      
+      <div class="nhsuk-inset-text nhsuk-u-margin-bottom-0">
+        <span class="nhsuk-u-visually-hidden">Information: </span>
+        <h3 class="nhsuk-heading-s">If you think it's an emergency</h3>
+        <p>Go to <a href="javascript:void(0);" title="External website">Find your nearest A&amp;E</a></p>
+        <p>Call 999</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full nhsuk-u-margin-bottom-8">
+
+        <h2>Symptoms that affect the whole body or mind</h2>
+        <!--<p>Gen text...</p>-->
+        <div class="nhsuk-grid-row">
+  
+           <div class="nhsuk-grid-column-one-half">
+            
+  <div class="nhsuk-promo">
+    <a class="nhsuk-promo__link-wrapper" href="#/stuff">
+      <div class="nhsuk-promo__content">
+        <h3 class="nhsuk-promo__heading">Skin</h3>
+        <p class="nhsuk-promo__description">Includes eczema, impetigo and warts.</p>
+      </div>
+    </a>
+  </div>
+  
+          </div>
+  
+           <div class="nhsuk-grid-column-one-half">
+            
+  <div class="nhsuk-promo">
+    <a class="nhsuk-promo__link-wrapper" href="#/stuff">
+      <div class="nhsuk-promo__content">
+        <h3 class="nhsuk-promo__heading">Bones</h3>
+        <p class="nhsuk-promo__description">Includes breaks, pains and swellings.</p>
+      </div>
+    </a>
+  </div>
+  
+          </div>
+            <div class="nhsuk-grid-column-one-half">
+            
+  <div class="nhsuk-promo">
+    <a class="nhsuk-promo__link-wrapper" href="#/stuff">
+      <div class="nhsuk-promo__content">
+        <h3 class="nhsuk-promo__heading">Whole body</h3>
+        <p class="nhsuk-promo__description">Includes high temperature, shivers and tiredness.</p>
+      </div>
+    </a>
+  </div>
+  
+          </div>
+  
+          <div class="nhsuk-grid-column-one-half">
+            
+            <div class="nhsuk-promo">
+              <a class="nhsuk-promo__link-wrapper" href="level-one/mind">
+                <div class="nhsuk-promo__content">
+                  <h3 class="nhsuk-promo__heading">Mind</h3>
+                  <p class="nhsuk-promo__description">Includes low mood, suicidal thoughts and anxiety.</p>
+                </div>
+              </a>
+            </div>
+            
+                    </div>
+        </div>
+      </div>
+        
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full nhsuk-u-margin-bottom-8">
+  
+          <h2>Symptoms by body part</h2>
+          <!--<p>Gen text...</p>-->
+          <div class="nhsuk-grid-row">
+    
+             <div class="nhsuk-grid-column-one-half">
+              
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="#/stuff">
+        <div class="nhsuk-promo__content">
+          <h3 class="nhsuk-promo__heading">Head, hair and face</h3>
+          <p class="nhsuk-promo__description">Includes dry eyes, feeling dizzy and lice.</p>
+        </div>
+      </a>
+    </div>
+    
+            </div>
+    
+             <div class="nhsuk-grid-column-one-half">
+              
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="#/stuff">
+        <div class="nhsuk-promo__content">
+          <h3 class="nhsuk-promo__heading">Neck and throat</h3>
+          <p class="nhsuk-promo__description">Includes lumps, sore throat and stiff neck.</p>
+        </div>
+      </a>
+    </div>
+    
+            </div>
+              <div class="nhsuk-grid-column-one-half">
+              
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="javascript:void(0);">
+        <div class="nhsuk-promo__content">
+          <h3 class="nhsuk-promo__heading">Shoulders and arms</h3>
+          <p class="nhsuk-promo__description">Includes loss of feeling, pins and needles and problems carrying things.</p>
+        </div>
+      </a>
+    </div>
+    
+            </div>
+    
+            <div class="nhsuk-grid-column-one-half">
+              
+              <div class="nhsuk-promo">
+                <a class="nhsuk-promo__link-wrapper" href="level-one/hands">
+                  <div class="nhsuk-promo__content">
+                    <h3 class="nhsuk-promo__heading">Wrists, hands and fingers</h3>
+                    <p class="nhsuk-promo__description">Includes grip problems, lack of movement and tense muscles.</p>
+                  </div>
+                </a>
+              </div>
+              
+                      </div>
+                      <div class="nhsuk-grid-column-one-half">
+              
+                        <div class="nhsuk-promo">
+                          <a class="nhsuk-promo__link-wrapper" href="#/stuff">
+                            <div class="nhsuk-promo__content">
+                              <h3 class="nhsuk-promo__heading">Chest and upper back</h3>
+                              <p class="nhsuk-promo__description">Includes chest pain, shortness of breath and stiffness.</p>
+                            </div>
+                          </a>
+                        </div>
+                        
+                                </div>
+                        
+                                <div class="nhsuk-grid-column-one-half">
+                                  
+                                  <div class="nhsuk-promo">
+                                    <a class="nhsuk-promo__link-wrapper" href="#/stuff">
+                                      <div class="nhsuk-promo__content">
+                                        <h3 class="nhsuk-promo__heading">Stomach and sides</h3>
+                                        <p class="nhsuk-promo__description">Includes feeling sick, strains and tummy upsets.</p>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  
+                                          </div>
+                                          <div class="nhsuk-grid-column-one-half">
+                                  
+                                            <div class="nhsuk-promo">
+                                              <a class="nhsuk-promo__link-wrapper" href="#/stuff">
+                                                <div class="nhsuk-promo__content">
+                                                  <h3 class="nhsuk-promo__heading">Groin and genitals</h3>
+                                                  <p class="nhsuk-promo__description">Includes erection problems, lumps and burning sensations.</p>
+                                                </div>
+                                              </a>
+                                            </div>
+                                            </div>
+                                            <div class="nhsuk-grid-row"> 
+                                            <div class="nhsuk-grid-column-one-half">
+                                  
+                                              <div class="nhsuk-promo">
+                                                <a class="nhsuk-promo__link-wrapper" href="#/stuff">
+                                                  <div class="nhsuk-promo__content">
+                                                    <h3 class="nhsuk-promo__heading">Bottom</h3>
+                                                    <p class="nhsuk-promo__description">Includes bleeding, itchines and </br> soreness.</p>
+                                                  </div>
+                                                </a>
+                                              </div>
+                                              
+                                                      </div>
+                                            
+                                                    </div>
+                                                    <div class="nhsuk-grid-column-one-half">
+                                  
+                                                      <div class="nhsuk-promo">
+                                                        <a class="nhsuk-promo__link-wrapper" href="#/stuff">
+                                                          <div class="nhsuk-promo__content">
+                                                            <h3 class="nhsuk-promo__heading">Hips, legs and feet</h3>
+                                                            <p class="nhsuk-promo__description">Includes aching muscles, pain under the foot and stiff joints.</p>
+                                                          </div>
+                                                        </a>
+                                                      </div>
+                                                      
+                                                              </div>
+                                                              </div>
+
+                                                             
+                                                              
+                                                              
+
+                                                             
+          </div>
+        </div>
+
+     <!-- End of content -->
+  
+{% endblock %}
