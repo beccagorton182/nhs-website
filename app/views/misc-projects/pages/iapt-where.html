@@ -1,0 +1,74 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Find an NHS psychological therapies service
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row nhsuk-u-margin-top-0">
+    <div class="nhsuk-grid-column-three-quarters nhsuk-u-margin-top-0">
+
+      <div class="nhsuk-back-link">
+        <a class="nhsuk-back-link__link" href="../pages/iapt-what">
+        <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+        </svg>
+        Go back</a>
+      </div>
+
+      
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+
+
+      <!-- Change the page title here -->
+      <h1>
+        We need to know where your GP is
+      </h1>
+      <p>This is so we can get you to the right psychological therapies service</p>
+      
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="input-width-20">
+          Enter the name of your GP surgery (or the street name):
+        </label>
+        <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
+      </div>
+      <details class="nhsuk-details" nhsuk-polyfilled="true" id="nhsuk-details0">
+        <summary class="nhsuk-details__summary" role="button" aria-controls="nhsuk-details__text0" tabindex="0" aria-expanded="false">
+          <span class="nhsuk-details__summary-text">
+            Does my GP need to know?
+          </span>
+        </summary>
+        <div class="nhsuk-details__text" id="nhsuk-details__text0" aria-hidden="true">
+            <p>The service will only tell your GP with your permission.</p>
+            <p>The only time they will contact your GP without your permission is if they believe you are at risk of harming yourself or other people.</p>
+          
+        </div>
+      </details>
+<a class="nhsuk-button nhsuk-u-margin-top-4" href="../pages/iapt-results">
+  Continue
+</a>
+      <!-- End of content -->
+
+    </div>  
+
+  </div>
+{% endblock %}
