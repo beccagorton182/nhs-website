@@ -54,43 +54,34 @@
 <!-- Footer goes inside the footer block -->
 <!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
 {% block footer %}
-  {{ footer({
-    "links": [
-      {
-        "URL": "/",
-        "label": "NHS sites"
-      },
-      {
-        "URL": "/",
-        "label": "Profile editor login"
-      },
-      {
-        "URL": "/",
-        "label": "Our policies"
-      },
-      {
-        "URL": "/",
-        "label": "About us"
-      },
-      {
-        "URL": "/",
-        "label": "Sitemap"
-      },
-      {
-        "URL": "/",
-        "label": "Cookies"
-      },
-      {
-        "URL": "/",
-        "label": "Contact us"
-      },
-      {
-        "URL": "/",
-        "label": "Accessibility statement"
-      }
 
-    ]
-  })}}
+  <footer role="contentinfo">
+    <div class="nhsuk-footer" id="nhsuk-footer">
+      <div class="nhsuk-width-container">
+
+
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-full">
+            <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+            <ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
+              <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="/docs">NHS sites</a></li>
+              <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="/">About us</a></li>
+              <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="/">Contact us</a></li>
+              <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="/docs">Profile editor login</a></li>
+              <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="/">Sitemap</a></li>
+              <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="/">Accessibility statement</a></li>
+              <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="/docs">Our policies</a></li>
+              <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="/">Cookies</a></li>
+            
+            </ul>
+
+            <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 {% endblock %}
 
 {% block bodyEnd %}
