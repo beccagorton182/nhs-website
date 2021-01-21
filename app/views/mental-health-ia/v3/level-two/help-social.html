@@ -1,0 +1,85 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-newia.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Mental Health
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row nhsuk-u-margin-top-0">
+    <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-top-0">
+
+      <nav class="nhsuk-u-margin-bottom-3 nhsuk-u-margin-0" aria-label="Breadcrumb">
+        <div>
+          <ol class="nhsuk-breadcrumb__list ">
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="">Home</a></li>
+            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="../mental-health">Mental health</a></li>
+            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="../level-one/feelings">Social care and your rights</a></li>
+          </ol>
+          <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="../level-one/feelings">Social care and your rights</a></p>
+        </div>
+      </nav>
+
+      
+      
+
+      <!-- Change the page title here -->
+      <h1>
+   Getting help from social care
+      
+      </h1>
+
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+
+      <p class="nhsuk-lede-text">
+        Read about  .
+      </p>
+
+      <div class="nhsuk-action-link nhsuk-u-margin-bottom-4">
+        <a class="nhsuk-action-link__link" href="../level-one/get-help-now">
+          <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+          </svg>
+          <span class="nhsuk-action-link__text">Get urgent help now for mental health</span>
+        </a>
+      </div>
+
+      <ul class="key-links">
+        <li><a href="../pages/..">Mental health aftercare after being sectioned</a></li>
+        <li><a href="../pages/..">Finding an advocate to speak up for you</a></li>
+        <li><a href="../pages/..">Care programme approach</a></li>
+        <li><a href="../pages/..">Help at home from a carer</a></li>
+        <li><a href="../pages/..">Shared live schemes</a></li>
+        <li><a href="../pages/..">Social care, benefits and NHS support you can get for free</a></li>
+    
+        
+        
+      </ul>
+
+      
+
+  </div>
+
+</div>
+
+     <!-- End of content -->
+  
+{% endblock %}
