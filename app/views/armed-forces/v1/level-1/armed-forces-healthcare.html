@@ -1,0 +1,206 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-af.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Armed forces Healthcare
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row nhsuk-u-margin-top-0">
+  <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-top-0">
+
+    <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background:none;">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/level-one">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/level-one/level-two">NHS Services</a></li>
+      <!-- <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/level-one/level-two/level-three">Leaving the armed forces</a></li> -->
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/level-one/level-two/level-three">Back to Level three</a></p>
+  </div>
+</nav>
+
+
+
+
+    <!-- Change the page title here -->
+    <h1>
+Healthcare for the armed forces community
+    </h1>
+
+    <!-- Add your content here -->
+    <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+
+    <p class="nhsuk-lede-text">
+      How the NHS can help if you're in the British armed forces, a veteran or a family member of someone who is serving or who has served.
+    </p>
+
+
+  </div>
+</div>
+
+
+      <div class="nhsuk-grid-row nhsuk-promo-group">
+        <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+            <div class="nhsuk-promo nhsuk-promo_canon">
+                <a class="nhsuk-promo__link-wrapper" href="../level-2/veterans">
+                    <div class="nhsuk-promo__content">
+                      <h3 class="nhsuk-promo__heading">Support for armed forces veterans</h3>
+                      <p class="nhsuk-promo__description">Read about common feelings and symptoms such as stress, anxiety or a low mood.</p>
+                    </div>
+                    <div class="arrow" style="">
+                      <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667" viewBox="0 0 26.667 26.667">
+                        <circle id="Oval" cx="13.333" cy="13.333" r="13.333" fill="#005EB8"></circle>
+                        <g id="Group_1" data-name="Group 1" transform="translate(11.667 9.229) rotate(45)">
+                          <path id="Path" d="M0,0V5.333" transform="translate(5.333 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"></path>
+                          <path id="Path-2" data-name="Path" d="M0,0H5.333" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+            </div>
+        </div>
+
+        <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+            <div class="nhsuk-promo nhsuk-promo_canon">
+                <a class="nhsuk-promo__link-wrapper" href="../level-2/serving-personnel">
+                    <div class="nhsuk-promo__content">
+                      <h3 class="nhsuk-promo__heading">Serving Personnel</h3>
+                      <p class="nhsuk-promo__description">Support for serving personnel including reservists and commonwealth individuals.</p>
+                    </div>
+                    <div class="arrow" style="">
+                      <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667" viewBox="0 0 26.667 26.667">
+                        <circle id="Oval" cx="13.333" cy="13.333" r="13.333" fill="#005EB8"></circle>
+                        <g id="Group_1" data-name="Group 1" transform="translate(11.667 9.229) rotate(45)">
+                          <path id="Path" d="M0,0V5.333" transform="translate(5.333 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"></path>
+                          <path id="Path-2" data-name="Path" d="M0,0H5.333" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+            </div>
+        </div>
+
+      </div>
+
+      <div class="nhsuk-grid-row nhsuk-promo-group">
+        <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+            <div class="nhsuk-promo nhsuk-promo_canon">
+                <a class="nhsuk-promo__link-wrapper" href="../level-2/transition">
+                    <div class="nhsuk-promo__content">
+                      <h3 class="nhsuk-promo__heading">Leaving the armed forces</h3>
+                      <p class="nhsuk-promo__description">Advice for you and people you support about mental health in life situations and events, such as pregnancy and bullying at work.</p>
+                    </div>
+                    <div class="arrow" style="">
+                      <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667" viewBox="0 0 26.667 26.667">
+                        <circle id="Oval" cx="13.333" cy="13.333" r="13.333" fill="#005EB8"></circle>
+                        <g id="Group_1" data-name="Group 1" transform="translate(11.667 9.229) rotate(45)">
+                          <path id="Path" d="M0,0V5.333" transform="translate(5.333 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"></path>
+                          <path id="Path-2" data-name="Path" d="M0,0H5.333" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+            </div>
+        </div>
+
+        <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+            <div class="nhsuk-promo nhsuk-promo_canon">
+                <a class="nhsuk-promo__link-wrapper" href="../level-2/charities">
+                    <div class="nhsuk-promo__content">
+                      <h3 class="nhsuk-promo__heading">Armed forces charities and support groups</h3>
+                      <p class="nhsuk-promo__description">Read about different types of self-help, such as 5 steps to mental wellbeing and breathing exercises.</p>
+                    </div>
+                    <div class="arrow" style="">
+                      <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667" viewBox="0 0 26.667 26.667">
+                        <circle id="Oval" cx="13.333" cy="13.333" r="13.333" fill="#005EB8"></circle>
+                        <g id="Group_1" data-name="Group 1" transform="translate(11.667 9.229) rotate(45)">
+                          <path id="Path" d="M0,0V5.333" transform="translate(5.333 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"></path>
+                          <path id="Path-2" data-name="Path" d="M0,0H5.333" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="nhsuk-grid-row nhsuk-promo-group">
+        <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+            <div class="nhsuk-promo nhsuk-promo_canon">
+                <a class="nhsuk-promo__link-wrapper" href="../level-2/nhs-services">
+                    <div class="nhsuk-promo__content">
+                      <h3 class="nhsuk-promo__heading">Using NHS services</h3>
+                      <p class="nhsuk-promo__description">Read information and support about NHS, charity and voluntary mental health services and how to access them. </p>
+                    </div>
+                    <div class="arrow" style="">
+                      <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667" viewBox="0 0 26.667 26.667">
+                        <circle id="Oval" cx="13.333" cy="13.333" r="13.333" fill="#005EB8"></circle>
+                        <g id="Group_1" data-name="Group 1" transform="translate(11.667 9.229) rotate(45)">
+                          <path id="Path" d="M0,0V5.333" transform="translate(5.333 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"></path>
+                          <path id="Path-2" data-name="Path" d="M0,0H5.333" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+            </div>
+        </div>
+
+        <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+            <div class="nhsuk-promo nhsuk-promo_canon">
+                <a class="nhsuk-promo__link-wrapper" href="../level-2/mental-health-support">
+                    <div class="nhsuk-promo__content">
+                      <h3 class="nhsuk-promo__heading">Mental health support</h3>
+                      <p class="nhsuk-promo__description">Read advice and support about mental health for children, teenagers, students and parents.</p>
+                    </div>
+                    <div class="arrow" style="">
+                      <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667" viewBox="0 0 26.667 26.667">
+                        <circle id="Oval" cx="13.333" cy="13.333" r="13.333" fill="#005EB8"></circle>
+                        <g id="Group_1" data-name="Group 1" transform="translate(11.667 9.229) rotate(45)">
+                          <path id="Path" d="M0,0V5.333" transform="translate(5.333 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"></path>
+                          <path id="Path-2" data-name="Path" d="M0,0H5.333" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- End of content -->
+
+{% endblock %}
