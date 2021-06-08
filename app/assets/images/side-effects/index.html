@@ -1,0 +1,104 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-9-health-a-to-z.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+About Propranolol - NHS.UK
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% from 'details/macro.njk' import details %}
+
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+<main class="nhsuk-main-wrapper" id="maincontent" style="padding-top: 0px !important;padding-bottom:0px;">
+  <section>
+
+
+  <body class="">
+
+
+
+      <a class="nhsuk-skip-link" href="#maincontent">Skip to main content</a>
+
+
+    <div class="nhsuk-width-container">
+      <main class="nhsuk-main-wrapper" id="maincontent" style="padding-top:20px;">
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+
+
+    <section id="side-effects">
+
+
+        <h1>Side effects</h1>
+
+      <div class="block-richtext"><p>Like all medicines, propranolol can cause side effects in some people but many people have no side effects or only minor ones.</p><p>Side effects often improve as your body gets used to the medicine.</p><h3>Common side effects</h3><p>These common side effects happen in more than 1 in 100 people. They're usually mild and short lived.</p><p>Talk to your doctor or pharmacist if the side effects bother you or last more than a few days:</p><ul><li>feeling tired, dizzy or light headed (these can be signs of a slow heart rate)</li><li>cold fingers or toes (propranolol may affect the blood supply to your hands and feet)</li><li>difficulties sleeping or nightmares</li><li>feeling sick (nausea)</li></ul><h3>Serious side effects</h3><p>It happens rarely, but some people have serious side effects when taking propranolol.</p><p><b>Tell a doctor straight away if you have</b>:</p><ul><li>shortness of breath with a cough which gets worse when you exercise (like walking up stairs), swollen ankles or legs, chest pain, or an irregular heartbeat – these are signs of heart problems</li><li>shortness of breath, wheezing and tightening of your chest – these can be signs of lung problems</li><li>yellow skin or the whites of your eyes turn yellow – these can be signs of liver problems</li></ul><h4>Serious allergic reaction</h4><p>In rare cases, propranolol may cause a serious allergic reaction <a href="/conditions/anaphylaxis/">(anaphylaxis)</a>.</p></div>
+<div class="block-common_content">
+
+
+
+
+<div class="nhsuk-care-card nhsuk-care-card--immediate">
+  <div class="nhsuk-care-card__heading-container">
+    <h5 class="nhsuk-care-card__heading">
+      <span role="text">
+        <span class="nhsuk-u-visually-hidden">Immediate action required: </span>Call 999 or go to A&amp;E now if:
+      </span>
+    </h5>
+    <span class="nhsuk-care-card__arrow" aria-hidden="true"></span>
+  </div>
+  <div class="nhsuk-care-card__content">
+
+      <ul><li>you get a skin rash that may include itchy, red, swollen, blistered or peeling skin</li><li>you're wheezing</li><li>you get tightness in the chest or throat</li><li>you have trouble breathing or talking</li><li>your mouth, face, lips, tongue or throat start swelling</li></ul><p>You could be having a serious allergic reaction and may need immediate treatment in hospital.</p>
+
+
+  </div>
+</div>
+
+
+
+</div>
+<div class="block-richtext"><p>These are not all the side effects of propranolol. For a full list, see the leaflet inside your medicine packet.</p></div>
+    </section>
+
+    <section id="">
+
+      <div class="block-common_content">
+
+
+    <div class="nhsuk-inset-text">
+  <span class="nhsuk-u-visually-hidden">Information: </span>
+  <p>You can report any suspected side effect using the Yellow Card safety scheme.</p><p><a href="https://yellowcard.mhra.gov.uk/">Visit Yellow Card for further information</a>.</p>
+</div>
+
+
+
+</div>
+    </section>
+
+
+      </div>
+
+
+
+    </div>
+
+
+
+
+</main>
+
+{% endblock %}
