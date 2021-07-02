@@ -1,0 +1,159 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-af.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Armed forces Healthcare
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row nhsuk-u-margin-top-0">
+  <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-top-0">
+
+    <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background:none;">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/level-one">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="../../nhs-services-1">NHS Services</a></li>
+      <!-- <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/level-one/level-two/level-three">Leaving the armed forces</a></li> -->
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/level-one/level-two/level-three">Back to Level three</a></p>
+  </div>
+</nav>
+
+
+
+
+    <!-- Change the page title here -->
+    <h1>
+Healthcare for the armed forces community
+    </h1>
+
+    <!-- Add your content here -->
+    <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+
+    <p class="nhsuk-lede-text">
+      How the NHS can help if you're in the British armed forces, a veteran or a family member of someone who is serving or who has served.
+    </p>
+
+
+  </div>
+</div>
+
+<div class="nhsuk-grid-row nhsuk-u-margin-top-0">
+
+<div class="nhsuk-grid-column-one-third">
+<div class="nhsuk-card nhsuk-card--clickable">
+<img class="nhsuk-card__img" style="height:185px;object-fit:cover; " src="https://www.forces.net/sites/default/files/styles/cover_image/public/Veterans-Badge-HM-Armed-Forces-Defence-Imagery.jpg?itok=QBaiMJof" alt="">
+<div class="nhsuk-card__content">
+<h2 class="nhsuk-card__heading nhsuk-heading-m">
+<a class="nhsuk-card__link" href="veterans" >Healthcare for armed forces veterans</a>
+</h2>
+<p class="nhsuk-card__description">Read about healthcare and support dedicated to veterans, non-mobilised reservists, families and carers.</p>
+</div>
+</div>
+</div>
+
+<div class="nhsuk-grid-column-one-third ">
+<div class="nhsuk-card nhsuk-card--clickable">
+<img class="nhsuk-card__img" src="https://www.armedforcescovenant.gov.uk/wp-content/uploads/2016/02/Reservist-1-500x333.jpg" alt="">
+<div class="nhsuk-card__content">
+<h2 class="nhsuk-card__heading nhsuk-heading-m">
+<a class="nhsuk-card__link" href="serving-personnel">Healthcare for armed forces serving personnel</a>
+</h2>
+<p class="nhsuk-card__description">Read about healthcare and support for serving personnel, mobilised reservists, and family members. </p>
+</div>
+</div>
+
+</div>
+
+
+<div class="nhsuk-grid-column-one-third ">
+<div class="nhsuk-card nhsuk-card--clickable">
+<img class="nhsuk-card__img" src="https://www.securityclearedjobs.com/getasset/de98e3e0-ca07-420d-9271-dfd952db26f3/" alt="">
+<div class="nhsuk-card__content">
+<h2 class="nhsuk-card__heading nhsuk-heading-m">
+<a class="nhsuk-card__link" href="transition">Support when leaving the armed forces</a>
+</h2>
+<p class="nhsuk-card__description">Read information and support to help you when leaving the armed forces.</p>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<div class="nhsuk-grid-row nhsuk-u-margin-top-0">
+
+<div class="nhsuk-grid-column-one-third ">
+<div class="nhsuk-card nhsuk-card--clickable">
+<img class="nhsuk-card__img" style="height:185px; object-fit:cover;"src="https://pbs.twimg.com/media/EHLPUyeWsAUdna1?format=jpg&name=4096x4096" alt="v">
+<div class="nhsuk-card__content">
+<h2 class="nhsuk-card__heading nhsuk-heading-m">
+<a class="nhsuk-card__link" href="charities">Armed forces charities and support groups</a>
+</h2>
+<p class="nhsuk-card__description">Find charities and support for situations specific to the armed forces. </p>
+</div>
+</div>
+
+</div>
+
+
+<div class="nhsuk-grid-column-one-third ">
+<div class="nhsuk-card nhsuk-card--clickable">
+<img class="nhsuk-card__img"style="height:185px;object-fit:cover; " src="https://www.e-lfh.org.uk/wp-content/uploads/2017/04/vth-sample-session6.jpg" alt="">
+<div class="nhsuk-card__content">
+<h2 class="nhsuk-card__heading nhsuk-heading-m">
+<a class="nhsuk-card__link" href="nhs-services">Armed forces introduction to NHS services</a>
+</h2>
+<p class="nhsuk-card__description">Find information about how the NHS works and how it provices healthcare to the armed forces community.</p>
+</div>
+</div>
+</div>
+
+<div class="nhsuk-grid-column-one-third ">
+<div class="nhsuk-card nhsuk-card--clickable">
+<img class="nhsuk-card__img" style="height:185px; object-fit:cover;"src="https://s3.eu-west-2.amazonaws.com/server-asset-backups/wiltshire-assets/uploads/content/servingpersoneel.jpg?mtime=20200103113057&focal=none" alt="">
+<div class="nhsuk-card__content">
+<h2 class="nhsuk-card__heading nhsuk-heading-m">
+<a class="nhsuk-card__link" href="../level-2/mental-health-st">Armed forces mental health support</a>
+</h2>
+<p class="nhsuk-card__description">Find help and support for mental health if you're a veteran, serving personnel or the family of someone in the armed forces.</p>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- End of content -->
+
+{% endblock %}
